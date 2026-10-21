@@ -1,0 +1,291 @@
+{
+ "_about": "Level 175: the Sorcerer against the Professor (its transcendent class; the sidegrade spec compared it with a High Wizard). Reference: Fire Bolt under Double Casting; area: Heaven's Drive. See README.md. Casters are measured on the plain dummy: the anchor (Dark 4, MDEF 50) cuts spells unevenly by element and hit count.",
+ "load": [
+  "mods/level175-core",
+  "mods/transcendent-third-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchored",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "PF_DoubleCast_FireBolt",
+   "class": 4017,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59011,
+   "skills": "19",
+   "levels": "10",
+   "pre": "482:5:self",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "id": "PF_HeavensDrive_area",
+   "class": 4017,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59011,
+   "skills": "91",
+   "levels": "5",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "id": "L99_SO_VaretyrSpear",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2454",
+   "levels": "10",
+   "level": 99,
+   "versus": "PF_DoubleCast_FireBolt"
+  },
+  {
+   "id": "L130_SO_VaretyrSpear",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2454",
+   "levels": "10",
+   "level": 130,
+   "versus": "PF_DoubleCast_FireBolt"
+  },
+  {
+   "id": "L150_SO_VaretyrSpear",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2454",
+   "levels": "10",
+   "level": 150,
+   "versus": "PF_DoubleCast_FireBolt"
+  },
+  {
+   "id": "L175_SO_VaretyrSpear",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2454",
+   "levels": "10",
+   "level": 175,
+   "versus": "PF_DoubleCast_FireBolt",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "L99_SO_SpellFist",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "attack",
+   "levels": "1",
+   "pre": "19:10,2445:10:self",
+   "level": 99,
+   "versus": "PF_DoubleCast_FireBolt"
+  },
+  {
+   "id": "L130_SO_SpellFist",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "attack",
+   "levels": "1",
+   "pre": "19:10,2445:10:self",
+   "level": 130,
+   "versus": "PF_DoubleCast_FireBolt"
+  },
+  {
+   "id": "L150_SO_SpellFist",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "attack",
+   "levels": "1",
+   "pre": "19:10,2445:10:self",
+   "level": 150,
+   "versus": "PF_DoubleCast_FireBolt"
+  },
+  {
+   "id": "L175_SO_SpellFist",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "attack",
+   "levels": "1",
+   "pre": "19:10,2445:10:self",
+   "level": 175,
+   "versus": "PF_DoubleCast_FireBolt",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "L175_SO_PsychicWave_area",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2449",
+   "levels": "5",
+   "how": "pos",
+   "level": 175,
+   "versus": "PF_HeavensDrive_area"
+  },
+  {
+   "id": "L175_SO_PoisonBuster_area",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2448",
+   "levels": "5",
+   "level": 175,
+   "versus": "PF_HeavensDrive_area"
+  },
+  {
+   "id": "L175_SO_CloudKill_area",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2450",
+   "levels": "5",
+   "how": "pos",
+   "level": 175,
+   "versus": "PF_HeavensDrive_area"
+  },
+  {
+   "id": "L175_kept_PF_DoubleCast_FireBolt",
+   "class": 4074,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59011,
+   "skills": "19",
+   "levels": "10",
+   "pre": "482:5:self",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "PF_DoubleCast_FireBolt"
+  },
+  {
+   "id": "L175_kept_PF_HeavensDrive_area",
+   "class": 4074,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59011,
+   "skills": "91",
+   "levels": "5",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "PF_HeavensDrive_area"
+  },
+  {
+   "id": "L175_SO_SpellFist_agi",
+   "class": 4074,
+   "weapon": 59011,
+   "skills": "attack",
+   "levels": "1",
+   "pre": "19:10,2445:10:self",
+   "level": 175,
+   "versus": "PF_DoubleCast_FireBolt",
+   "aim": [
+    1.35,
+    1.65
+   ],
+   "extra": "whisper npc:KoTest stats#1#130#1#130#60#1;wait 2"
+  },
+  {
+   "id": "L175_SO_DiamondDust_area",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2447",
+   "levels": "5",
+   "how": "pos",
+   "level": 175,
+   "versus": "L175_SO_VaretyrSpear",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_SO_EarthGrave_area",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "skills": "2446",
+   "levels": "5",
+   "how": "pos",
+   "level": 175,
+   "versus": "L175_SO_VaretyrSpear",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  }
+ ]
+}

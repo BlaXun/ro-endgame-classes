@@ -1,0 +1,999 @@
+{
+ "_about": "Balance runs for transcendent-third-classes: python3 tools/expanded_class/balance/run_specs.py tools/transcendent-third-classes/balance.json (rig: tools/expanded_class/balance/README.md).",
+ "load": [
+  "mods/level175-core",
+  "mods/transcendent-third-classes"
+ ],
+ "seconds": 40,
+ "runs": [
+  {
+   "id": "AX_SonicBlow",
+   "class": 4013,
+   "weapon": 59001,
+   "skills": "136",
+   "levels": "10"
+  },
+  {
+   "id": "GX_CrossImpact",
+   "class": 4065,
+   "weapon": 59001,
+   "skills": "2022",
+   "levels": "5",
+   "versus": "AX_SonicBlow",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "GX_RollingCutter_CRS",
+   "class": 4065,
+   "weapon": 59001,
+   "skills": "2036s,2037",
+   "levels": "5,5",
+   "step": 0.35,
+   "seq": true,
+   "versus": "AX_SonicBlow",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "GX_RollingCutter_area",
+   "class": 4065,
+   "weapon": 59001,
+   "skills": "2036s",
+   "levels": "5",
+   "versus": "GX_RollingCutter_CRS",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "ST_DoubleStrafe",
+   "class": 4018,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "46",
+   "levels": "10"
+  },
+  {
+   "id": "SC_TriangleShot",
+   "class": 4079,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "2288",
+   "levels": "10",
+   "versus": "ST_DoubleStrafe",
+   "aim": [
+    0.9,
+    1.05
+   ]
+  },
+  {
+   "id": "SC_FatalMenace_area",
+   "class": 4079,
+   "weapon": 59002,
+   "skills": "2284",
+   "levels": "10",
+   "versus": "SC_TriangleShot",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "HW_Amp_Jupitel",
+   "class": 4010,
+   "weapon": 59011,
+   "skills": "366s,84",
+   "levels": "10,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "HW_Amp_MeteorStorm",
+   "class": 4010,
+   "weapon": 59011,
+   "skills": "366s,83",
+   "levels": "10,10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "AB_Adoramus_area",
+   "class": 4063,
+   "weapon": 59011,
+   "skills": "2040",
+   "levels": "10",
+   "method": "best",
+   "versus": "HW_Amp_MeteorStorm",
+   "aim": [
+    0.4,
+    0.65
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "AB_Judex_area",
+   "class": 4063,
+   "weapon": 59011,
+   "skills": "2038",
+   "levels": "10",
+   "method": "best",
+   "versus": "HW_Amp_MeteorStorm",
+   "aim": [
+    0.4,
+    0.65
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "LK_SpiralPierce",
+   "class": 4008,
+   "weapon": 59014,
+   "skills": "397",
+   "levels": "5"
+  },
+  {
+   "id": "RK_SonicWave",
+   "class": 4060,
+   "weapon": 59012,
+   "skills": "2002",
+   "levels": "10",
+   "versus": "LK_SpiralPierce",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "RK_HundredSpear",
+   "class": 4060,
+   "weapon": 59013,
+   "skills": "2004",
+   "levels": "10",
+   "method": "best",
+   "versus": "LK_SpiralPierce",
+   "aim": [
+    0.75,
+    1.0
+   ]
+  },
+  {
+   "id": "RK_WindCutter_area",
+   "class": 4060,
+   "weapon": 59012,
+   "skills": "2005",
+   "levels": "5",
+   "versus": "RK_SonicWave",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "RK_IgnitionBreak_area",
+   "class": 4060,
+   "weapon": 59012,
+   "skills": "2006s",
+   "levels": "5",
+   "versus": "RK_SonicWave",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "RK_DragonBreath_area",
+   "class": 4060,
+   "weapon": 59012,
+   "skills": "2008",
+   "levels": "10",
+   "how": "pos",
+   "extra": "whisper npc:KoTest mount#2;wait 1",
+   "versus": "RK_SonicWave",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "PA_RapidSmiting",
+   "class": 4015,
+   "weapon": 59015,
+   "skills": "480",
+   "levels": "5",
+   "extra": "whisper npc:KoTest eq#59016;wait 1"
+  },
+  {
+   "id": "RG_BanishingPoint",
+   "class": 4073,
+   "weapon": 59015,
+   "skills": "2308",
+   "levels": "10",
+   "extra": "whisper npc:KoTest eq#59016;wait 1",
+   "versus": "PA_RapidSmiting",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "RG_Overbrand_area",
+   "class": 4073,
+   "weapon": 59015,
+   "skills": "2317s",
+   "levels": "5",
+   "extra": "whisper npc:KoTest eq#59016;wait 1",
+   "versus": "RG_BanishingPoint",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "RG_EarthDrive_area",
+   "class": 4073,
+   "weapon": 59015,
+   "skills": "2323s",
+   "levels": "5",
+   "extra": "whisper npc:KoTest eq#59016;wait 1",
+   "versus": "RG_BanishingPoint",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "RG_CannonSpear_area",
+   "class": 4073,
+   "weapon": 59015,
+   "skills": "2307",
+   "levels": "5",
+   "extra": "whisper npc:KoTest eq#59016;wait 1",
+   "versus": "RG_BanishingPoint",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "RG_MoonSlasher_area",
+   "class": 4073,
+   "weapon": 59015,
+   "skills": "2320s",
+   "levels": "5",
+   "extra": "whisper npc:KoTest eq#59016;wait 1",
+   "versus": "RG_BanishingPoint",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "WL_HellInferno",
+   "class": 4061,
+   "weapon": 59011,
+   "skills": "2212",
+   "levels": "5",
+   "method": "best",
+   "versus": "HW_Amp_Jupitel",
+   "aim": [
+    0.85,
+    1.0
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "WL_SoulExpansion",
+   "class": 4061,
+   "weapon": 59011,
+   "skills": "2202",
+   "levels": "5",
+   "method": "best",
+   "versus": "HW_Amp_Jupitel",
+   "aim": [
+    0.85,
+    1.0
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "WL_TetraVortex",
+   "class": 4061,
+   "weapon": 59011,
+   "skills": "2222s,2223s,2224s,2229s,2217",
+   "levels": "5,5,5,5,10",
+   "method": "best",
+   "versus": "HW_Amp_Jupitel",
+   "aim": [
+    0.85,
+    1.05
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "WL_CrimsonRock_area",
+   "class": 4061,
+   "weapon": 59011,
+   "skills": "2211",
+   "levels": "5",
+   "method": "best",
+   "versus": "HW_Amp_MeteorStorm",
+   "aim": [
+    0.9,
+    1.15
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "WL_JackFrost_area",
+   "class": 4061,
+   "weapon": 59011,
+   "skills": "2204",
+   "levels": "5",
+   "method": "best",
+   "versus": "HW_Amp_MeteorStorm",
+   "aim": [
+    0.9,
+    1.15
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "WL_FrostMisty_area",
+   "class": 4061,
+   "weapon": 59011,
+   "skills": "2203",
+   "levels": "5",
+   "how": "pos",
+   "method": "best",
+   "versus": "HW_Amp_MeteorStorm",
+   "aim": [
+    0.9,
+    1.15
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "WL_ChainLightning_lone",
+   "class": 4061,
+   "weapon": 59011,
+   "skills": "2214",
+   "levels": "5",
+   "method": "best",
+   "versus": "HW_Amp_Jupitel",
+   "aim": [
+    0.85,
+    1.0
+   ],
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2
+  },
+  {
+   "id": "CH_OccultImpaction_Zen",
+   "class": 4016,
+   "weapon": 59017,
+   "skills": "266,401s",
+   "levels": "5,1"
+  },
+  {
+   "id": "CH_Asura_burst",
+   "class": 4016,
+   "weapon": 59017,
+   "skills": "271",
+   "levels": "5",
+   "pre": "270:5:self",
+   "extra": "whisper npc:KoTest sphererefill#15;wait 1",
+   "step": 0.3
+  },
+  {
+   "id": "SR_KnuckleArrow",
+   "class": 4077,
+   "weapon": 59017,
+   "skills": "2336",
+   "levels": "10",
+   "versus": "CH_OccultImpaction_Zen",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "SR_DragonCombo",
+   "class": 4077,
+   "weapon": 59017,
+   "skills": "2326",
+   "levels": "10",
+   "versus": "CH_OccultImpaction_Zen",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "SR_TigerCannon_RaisingDragon",
+   "class": 4077,
+   "weapon": 59017,
+   "skills": "2330",
+   "levels": "10",
+   "pre": "2338:10:self",
+   "versus": "CH_OccultImpaction_Zen",
+   "aim": [
+    0.75,
+    1.0
+   ]
+  },
+  {
+   "id": "SR_GatesOfHell_burst",
+   "class": 4077,
+   "weapon": 59017,
+   "skills": "2343",
+   "levels": "10",
+   "pre": "270:5:self",
+   "extra": "whisper npc:KoTest sphererefill#15;wait 1",
+   "step": 0.3,
+   "versus": "CH_Asura_burst",
+   "aim": [
+    0.3,
+    0.8
+   ]
+  },
+  {
+   "id": "SR_EarthShaker_area",
+   "class": 4077,
+   "weapon": 59017,
+   "skills": "2328s",
+   "levels": "5",
+   "pre": "270:5:self",
+   "extra": "whisper npc:KoTest sphererefill#15;wait 1",
+   "versus": "SR_KnuckleArrow",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "SR_SkyNetBlow_area",
+   "class": 4077,
+   "weapon": 59017,
+   "skills": "2327s",
+   "levels": "5",
+   "versus": "SR_KnuckleArrow",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "SR_LightningRide_area",
+   "class": 4077,
+   "weapon": 59017,
+   "skills": "2518",
+   "levels": "5",
+   "how": "pos",
+   "pre": "270:5:self",
+   "extra": "whisper npc:KoTest sphererefill#15;wait 1",
+   "versus": "SR_KnuckleArrow",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "SR_RampageBlast_area",
+   "class": 4077,
+   "weapon": 59017,
+   "skills": "2332s",
+   "levels": "5",
+   "pre": "270:5:self",
+   "extra": "whisper npc:KoTest sphererefill#15;wait 1",
+   "versus": "SR_KnuckleArrow",
+   "aim": [
+    0.3,
+    0.6
+   ]
+  },
+  {
+   "id": "SN_DoubleStrafe",
+   "class": 4012,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "46",
+   "levels": "10"
+  },
+  {
+   "id": "RA_AimedBolt",
+   "class": 4062,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "2236",
+   "levels": "10",
+   "versus": "SN_DoubleStrafe",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "RA_WargStrike",
+   "class": 4062,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "2243",
+   "levels": "5",
+   "pre": "2240:1:self:once",
+   "versus": "SN_DoubleStrafe",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "RA_Unlimit_AimedBolt",
+   "class": 4062,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "2236",
+   "levels": "10",
+   "pre": "5002:5:self:once",
+   "versus": "RA_AimedBolt"
+  },
+  {
+   "id": "RA_ArrowStorm_area",
+   "class": 4062,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "2233",
+   "levels": "10",
+   "versus": "RA_AimedBolt",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "RA_ClusterBomb_area",
+   "class": 4062,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "2239,2237",
+   "levels": "5,1",
+   "how": "near",
+   "seq": true,
+   "step": 0.5,
+   "versus": "RA_AimedBolt",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "RA_FiringTrap_area",
+   "class": 4062,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "2253,2237",
+   "levels": "5,1",
+   "how": "near",
+   "seq": true,
+   "step": 0.5,
+   "versus": "RA_AimedBolt",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "CL_MusicalStrike",
+   "class": 4020,
+   "weapon": 59018,
+   "ammo": 1750,
+   "stats": "dex",
+   "skills": "316",
+   "levels": "5"
+  },
+  {
+   "id": "MI_Reverberation",
+   "class": 4075,
+   "weapon": 59018,
+   "ammo": 1750,
+   "stats": "int",
+   "skills": "2414",
+   "levels": "5",
+   "versus": "CL_MusicalStrike",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "MI_MetallicSound",
+   "class": 4075,
+   "weapon": 59018,
+   "ammo": 1750,
+   "stats": "int",
+   "skills": "2413",
+   "levels": "10",
+   "versus": "CL_MusicalStrike",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "WA_Reverberation",
+   "class": 4076,
+   "user": "fem",
+   "weapon": 59019,
+   "ammo": 1750,
+   "stats": "int",
+   "skills": "2414",
+   "levels": "5",
+   "versus": "CL_MusicalStrike",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "MI_SevereRainstorm_area",
+   "class": 4075,
+   "weapon": 59004,
+   "ammo": 1750,
+   "stats": "dex",
+   "skills": "2418",
+   "levels": "5",
+   "how": "pos",
+   "step": 0.3,
+   "versus": "MI_Reverberation",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "MI_GreatEcho_area",
+   "class": 4075,
+   "weapon": 59018,
+   "ammo": 1750,
+   "stats": "dex",
+   "skills": "2426",
+   "levels": "5",
+   "how": "pos",
+   "step": 0.3,
+   "extra": "whisper npc:KoTest item#11513#40;wait 1",
+   "versus": "MI_Reverberation",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "CR_AcidTerror",
+   "class": 4019,
+   "weapon": 59020,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest item#7135#200;whisper npc:KoTest item#7136#200;whisper npc:KoTest item#6212#100;whisper npc:KoTest item#6210#100;wait 1",
+   "skills": "230",
+   "levels": "5"
+  },
+  {
+   "id": "CR_AcidDemonstration",
+   "class": 4019,
+   "weapon": 59020,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest item#7135#200;whisper npc:KoTest item#7136#200;whisper npc:KoTest item#6212#100;whisper npc:KoTest item#6210#100;wait 1",
+   "stats": "int",
+   "skills": "490",
+   "levels": "10",
+   "versus": "CR_AcidTerror"
+  },
+  {
+   "id": "GN_AcidTerror",
+   "class": 4078,
+   "weapon": 59020,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest item#7135#200;whisper npc:KoTest item#7136#200;whisper npc:KoTest item#6212#100;whisper npc:KoTest item#6210#100;wait 1",
+   "skills": "230",
+   "levels": "5",
+   "versus": "CR_AcidTerror",
+   "aim": [
+    0.85,
+    1.05
+   ]
+  },
+  {
+   "id": "GN_CartCannon_area",
+   "class": 4078,
+   "weapon": 59020,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest item#7135#200;whisper npc:KoTest item#7136#200;whisper npc:KoTest item#6212#100;whisper npc:KoTest item#6210#100;wait 1",
+   "ammo": 18000,
+   "stats": "int",
+   "skills": "2477",
+   "levels": "5",
+   "versus": "GN_AcidTerror",
+   "aim": [
+    0.4,
+    0.6
+   ],
+   "cartload": "989:79"
+  },
+  {
+   "id": "GN_CartTornado_area",
+   "class": 4078,
+   "weapon": 59020,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest item#7135#200;whisper npc:KoTest item#7136#200;whisper npc:KoTest item#6212#100;whisper npc:KoTest item#6210#100;wait 1",
+   "skills": "2476s",
+   "levels": "10",
+   "versus": "GN_AcidTerror",
+   "aim": [
+    0.4,
+    0.6
+   ],
+   "cartload": "989:79"
+  },
+  {
+   "id": "GN_SporeExplosion_area",
+   "class": 4078,
+   "weapon": 59020,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest item#7135#200;whisper npc:KoTest item#7136#200;whisper npc:KoTest item#6212#100;whisper npc:KoTest item#6210#100;wait 1",
+   "stats": "int",
+   "skills": "2481",
+   "levels": "10",
+   "step": 0.3,
+   "versus": "GN_AcidTerror",
+   "aim": [
+    0.4,
+    0.6
+   ],
+   "cartload": "989:79"
+  },
+  {
+   "id": "GN_CrazyWeed_area",
+   "class": 4078,
+   "weapon": 59020,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest item#7135#200;whisper npc:KoTest item#7136#200;whisper npc:KoTest item#6212#100;whisper npc:KoTest item#6210#100;wait 1",
+   "stats": "int",
+   "skills": "2483",
+   "levels": "10",
+   "how": "pos",
+   "step": 0.3,
+   "count": "2484",
+   "versus": "GN_AcidTerror",
+   "aim": [
+    0.4,
+    0.6
+   ],
+   "cartload": "989:79"
+  },
+  {
+   "id": "WS_CartTermination",
+   "class": 4011,
+   "weapon": 59021,
+   "extra": "whisper npc:KoTest cart#1;wait 1",
+   "cartload": "989:79",
+   "skills": "485",
+   "levels": "10",
+   "pre": "387:1:self"
+  },
+  {
+   "id": "NC_PowerSwing",
+   "class": 4064,
+   "weapon": 59021,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest mado#1;whisper npc:KoTest item#6146#300;whisper npc:KoTest item#6145#300;whisper npc:KoTest item#2139#1;wait 1",
+   "skills": "2279",
+   "levels": "10",
+   "versus": "WS_CartTermination",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "NC_BoostKnuckle",
+   "class": 4064,
+   "weapon": 59021,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest mado#1;whisper npc:KoTest item#6146#300;whisper npc:KoTest item#6145#300;whisper npc:KoTest item#2139#1;wait 1",
+   "skills": "2256",
+   "levels": "5",
+   "versus": "WS_CartTermination",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "NC_VulcanArm",
+   "class": 4064,
+   "weapon": 59021,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest mado#1;whisper npc:KoTest item#6146#300;whisper npc:KoTest item#6145#300;whisper npc:KoTest item#2139#1;wait 1",
+   "skills": "2258",
+   "levels": "3",
+   "versus": "WS_CartTermination",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "NC_ArmsCannon_area",
+   "class": 4064,
+   "weapon": 59021,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest mado#1;whisper npc:KoTest item#6146#300;whisper npc:KoTest item#6145#300;whisper npc:KoTest item#2139#1;wait 1;whisper npc:KoTest gun#59021#18000;wait 1",
+   "skills": "2261",
+   "levels": "5",
+   "method": "best",
+   "step": [
+    1.0
+   ],
+   "versus": "NC_PowerSwing",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "NC_AxeTornado_area",
+   "class": 4064,
+   "weapon": 59021,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest mado#1;whisper npc:KoTest item#6146#300;whisper npc:KoTest item#6145#300;whisper npc:KoTest item#2139#1;wait 1",
+   "skills": "2280s",
+   "levels": "5",
+   "versus": "NC_PowerSwing",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "NC_FlameLauncher_area",
+   "class": 4064,
+   "weapon": 59021,
+   "extra": "whisper npc:KoTest cart#1;whisper npc:KoTest mado#1;whisper npc:KoTest item#6146#300;whisper npc:KoTest item#6145#300;whisper npc:KoTest item#2139#1;wait 1",
+   "skills": "2259",
+   "levels": "3",
+   "versus": "NC_PowerSwing",
+   "aim": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "id": "SO_VaretyrSpear",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2,
+   "skills": "2454",
+   "levels": "10",
+   "versus": "HW_Amp_Jupitel",
+   "aim": [
+    0.85,
+    1.0
+   ]
+  },
+  {
+   "id": "SO_SpellFist",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "attack",
+   "levels": "1",
+   "pre": "19:10,2445:10:self",
+   "versus": "HW_Amp_Jupitel",
+   "aim": [
+    0.85,
+    1.05
+   ]
+  },
+  {
+   "id": "SO_PsychicWave_area",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2,
+   "skills": "2449",
+   "levels": "5",
+   "how": "pos",
+   "versus": "HW_Amp_MeteorStorm",
+   "aim": [
+    0.9,
+    1.15
+   ]
+  },
+  {
+   "id": "SO_PoisonBuster_area",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2,
+   "skills": "2448",
+   "levels": "5",
+   "versus": "HW_Amp_MeteorStorm",
+   "aim": [
+    0.9,
+    1.15
+   ]
+  },
+  {
+   "id": "SO_CloudKill_area",
+   "class": 4074,
+   "weapon": 59011,
+   "stats": "int",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "repeat": 2,
+   "skills": "2450",
+   "levels": "5",
+   "how": "pos",
+   "versus": "HW_Amp_MeteorStorm",
+   "aim": [
+    0.9,
+    1.15
+   ]
+  }
+ ]
+}

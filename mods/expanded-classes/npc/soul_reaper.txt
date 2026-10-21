@@ -1,0 +1,52 @@
+//===== soul-reaper ============================================
+//= Soul Reaper for pre-renewal: the Soul Linker's advancement.
+//=
+//= A Soul Linker at base level 99 and job level 50, with no skill
+//= points left, advances here. It keeps every Soul Linker skill (the
+//= new class's tree inherits them), its job level starts again
+//= at 1 and runs to 70, and its base level runs to 175.
+//= There is no rebirth and no other way to the class.
+//==============================================================
+
+payon,154,141,5	script	Shaman Seol#sr_prere	716,{
+	.@n$ = "[Shaman Seol]";
+	if (Class == Job_Soul_Reaper) {
+		mes .@n$;
+		mes "The souls answer to you now, Soul Reaper.";
+		mes "The restless dead carry gear made for your kind. Take it from them.";
+		close;
+	}
+	if (Class != Job_Soul_Linker) {
+		mes .@n$;
+		mes "A Soul Linker who has learned all a Soul Linker can learn goes on here: base level 99 and job level 50.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 50) {
+		mes .@n$;
+		mes "You are not ready. Come back at base level 99 and job level 50.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have learned all a Soul Linker can learn. From here you go on as a ^0000FFSoul Reaper^000000.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 70, with skill points for your new skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I am ready.:Not yet.") == 2) {
+		mes .@n$;
+		mes "The spirits will wait.";
+		close;
+	}
+	jobchange Job_Soul_Reaper;
+	mes .@n$;
+	mes "It is done. Go and learn what your new road teaches.";
+	close;
+}

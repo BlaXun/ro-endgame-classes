@@ -1,0 +1,52 @@
+//===== transcendent-third-classes: Shadow Chaser ===========
+//= The Stalker's advancement.
+//=
+//= A Stalker at base level 99 and job level 70, with no skill
+//= points left, becomes a Shadow Chaser here, beside the stock
+//= Stalker changer, which is untouched. There is no other way
+//= to the class.
+//=
+//= The class is rAthena's transcendent Shadow Chaser. It keeps every
+//= skill it had (its tree inherits the first, second and
+//= transcendent class) and adds its own; the job level starts
+//= again at 1 and runs to 70; the base level runs to 175.
+//==============================================================
+
+valkyrie,55,58,3	script	Shadow Chaser#Valkyrie	747,{
+	.@n$ = "[Shadow Chaser]";
+	if (Class == Job_Shadow_Chaser_T) {
+		mes .@n$;
+		mes "You chose the shadows. Blades and bows made for our kind turn up where thieves hide their loot: ask the mimics, the archers of Glast Heim, and the things that haunt the night.";
+		close;
+	}
+	if (Class != Job_Stalker) {
+		mes .@n$;
+		mes "A Stalker who has reached base level 99 and job level 70 goes on here, as a ^0000FFShadow Chaser^000000.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 70) {
+		mes .@n$;
+		mes "Come back at base level 99 and job level 70.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have walked the Stalker's road to its end. A ^0000FFShadow Chaser^000000 goes on from there.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 70, with skill points for the Shadow Chaser's own skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I take the shadows.:Not yet.") == 2)
+		close;
+	jobchange Job_Shadow_Chaser_T;
+	mes .@n$;
+	mes "Welcome, Shadow Chaser.";
+	close;
+}

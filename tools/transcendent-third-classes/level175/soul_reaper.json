@@ -1,0 +1,293 @@
+{
+ "_about": "Level 175, first round: the Soul Reaper against the Soul Linker (its base class at 99: an advancement is that class's transcendence, target about 1.5 times its single-target damage). See README.md. The Soul Reaper is an area caster: its area skills are held by the pack limit, not the 0.5 rule.",
+ "load": [
+  "mods/level175-core",
+  "mods/expanded-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchor",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "SL_Estin_Esma",
+   "class": 4049,
+   "level": 99,
+   "weapon": 59011,
+   "skills": "467,469",
+   "levels": "7,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "seq": true,
+   "dummy": "anchored"
+  },
+  {
+   "id": "SL_Estun_Esma",
+   "class": 4049,
+   "level": 99,
+   "weapon": 59011,
+   "skills": "468,469",
+   "levels": "7,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "seq": true,
+   "dummy": "anchored"
+  },
+  {
+   "id": "L99_SR_Espa",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2602",
+   "levels": "10",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 99,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L99_SR_Espa_Eswhoo",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2602,2604",
+   "levels": "10,5",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 99,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L99_SR_SoulCurse_CurseExplosion",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2601,2600",
+   "levels": "5,10",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 99,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L130_SR_Espa",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2602",
+   "levels": "10",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 130,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L130_SR_Espa_Eswhoo",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2602,2604",
+   "levels": "10,5",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 130,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L130_SR_SoulCurse_CurseExplosion",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2601,2600",
+   "levels": "5,10",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 130,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L150_SR_Espa",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2602",
+   "levels": "10",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 150,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L150_SR_Espa_Eswhoo",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2602,2604",
+   "levels": "10,5",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 150,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L150_SR_SoulCurse_CurseExplosion",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2601,2600",
+   "levels": "5,10",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 150,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_SR_Espa",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2602",
+   "levels": "10",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 175,
+   "versus": "SL_Estin_Esma",
+   "aim": [
+    1.35,
+    1.65
+   ],
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_SR_Espa_Eswhoo",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2602,2604",
+   "levels": "10,5",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 175,
+   "versus": "SL_Estin_Esma",
+   "aim": [
+    1.35,
+    1.65
+   ],
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_SR_SoulCurse_CurseExplosion",
+   "class": 4240,
+   "weapon": 59011,
+   "skills": "2601,2600",
+   "levels": "5,10",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest soulrefill#1;wait 1",
+   "method": "best",
+   "level": 175,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_SR_kept_Estin_Esma",
+   "class": 4240,
+   "level": 175,
+   "weapon": 59011,
+   "skills": "467,469",
+   "levels": "7,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "seq": true,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_kept_SL_Estin_Esma",
+   "class": 4240,
+   "level": 175,
+   "weapon": 59011,
+   "skills": "467,469",
+   "levels": "7,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "seq": true,
+   "versus": "SL_Estin_Esma",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_kept_SL_Estun_Esma",
+   "class": 4240,
+   "level": 175,
+   "weapon": 59011,
+   "skills": "468,469",
+   "levels": "7,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "seq": true,
+   "versus": "SL_Estun_Esma",
+   "dummy": "anchored"
+  }
+ ]
+}

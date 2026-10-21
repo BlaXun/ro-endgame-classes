@@ -1,0 +1,245 @@
+{
+ "_about": "Level 175, first round: the Expanded Super Novice against the Super Novice (its base class at 99: an advancement is that class's transcendence, target about 1.5 times its single-target damage). See README.md. It has no damage skill of its own: the same skills are measured on both. All runs on the plain dummy, so bolts and melee compare. Round 2 adds the second-class skills the Expanded Super Novice learns.",
+ "load": [
+  "mods/level175-core",
+  "mods/expanded-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchored",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "HW99_Jupitel",
+   "class": 4010,
+   "level": 99,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "84",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "id": "HW99_StormGust",
+   "class": 4010,
+   "level": 99,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "89",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "how": "pos"
+  },
+  {
+   "id": "HW99_LoV",
+   "class": 4010,
+   "level": 99,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "85",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "how": "pos"
+  },
+  {
+   "id": "HW99_Meteor",
+   "class": 4010,
+   "level": 99,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "83",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "how": "pos"
+  },
+  {
+   "id": "WL175_Jupitel",
+   "class": 4061,
+   "level": 175,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "84",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "id": "WL175_StormGust",
+   "class": 4061,
+   "level": 175,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "89",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "how": "pos"
+  },
+  {
+   "id": "WL175_LoV",
+   "class": 4061,
+   "level": 175,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "85",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "how": "pos"
+  },
+  {
+   "id": "WL175_Meteor",
+   "class": 4061,
+   "level": 175,
+   "weapon": 59011,
+   "stats": "int",
+   "skills": "83",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "how": "pos"
+  },
+  {
+   "id": "PA99_HolyCross",
+   "class": 4015,
+   "level": 99,
+   "weapon": 59015,
+   "skills": "253",
+   "levels": "10",
+   "step": 0.2,
+   "extra": "whisper npc:KoTest eq#59016;wait 1"
+  },
+  {
+   "id": "RG175_HolyCross",
+   "class": 4073,
+   "level": 175,
+   "weapon": 59015,
+   "skills": "253",
+   "levels": "10",
+   "step": 0.2,
+   "extra": "whisper npc:KoTest eq#59016;wait 1"
+  },
+  {
+   "id": "SN99_HolyCross_none",
+   "class": 23,
+   "level": 99,
+   "weapon": 59002,
+   "skills": "5",
+   "levels": "10",
+   "step": 0.2
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_JupitelThunder",
+   "stats": "int",
+   "skills": "84",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_HolyCross",
+   "skills": "253",
+   "levels": "10",
+   "step": 0.2
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_StormGust_area",
+   "stats": "int",
+   "skills": "89",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_MeteorStorm_area",
+   "stats": "int",
+   "skills": "83",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_LordOfVermilion_area",
+   "stats": "int",
+   "skills": "85",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_HeavensDrive_area",
+   "stats": "int",
+   "skills": "91",
+   "levels": "5",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "_about": "Level 175: the Rune Knight against the Lord Knight on the anchor (an Abysmal Knight's defences, immovable: Bowling Bash hits a lone target twice whether it moves or not). Full builds. The Lord Knight's single-target reference is Bowling Bash (REFERENCE_ROTATIONS.md). Targets: the Rune Knight's best single target at 175 about 1.5 times that; its own area skills at most 0.5 of its best single target, per target; Bowling Bash, which it keeps, held so the pack of five falls at most 1.25 times as fast.",
+ "load": [
+  "mods/level175-core",
+  "mods/transcendent-third-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchor",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "LK99_BowlingBash",
+   "class": 4008,
+   "level": 99,
+   "weapon": 59012,
+   "skills": "62",
+   "levels": "10"
+  },
+  {
+   "id": "LK99_SpiralPierce",
+   "class": 4008,
+   "level": 99,
+   "weapon": 59014,
+   "skills": "397",
+   "levels": "5",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK99_SonicWave",
+   "class": 4060,
+   "level": 99,
+   "weapon": 59012,
+   "skills": "2002",
+   "levels": "10",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK99_HundredSpear",
+   "class": 4060,
+   "level": 99,
+   "weapon": 59013,
+   "skills": "2004",
+   "levels": "10",
+   "method": "best",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK99_BowlingBash",
+   "class": 4060,
+   "level": 99,
+   "weapon": 59012,
+   "skills": "62",
+   "levels": "10",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK130_SonicWave",
+   "class": 4060,
+   "level": 130,
+   "weapon": 59012,
+   "skills": "2002",
+   "levels": "10",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK130_HundredSpear",
+   "class": 4060,
+   "level": 130,
+   "weapon": 59013,
+   "skills": "2004",
+   "levels": "10",
+   "method": "best",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK130_BowlingBash",
+   "class": 4060,
+   "level": 130,
+   "weapon": 59012,
+   "skills": "62",
+   "levels": "10",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK150_SonicWave",
+   "class": 4060,
+   "level": 150,
+   "weapon": 59012,
+   "skills": "2002",
+   "levels": "10",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK150_HundredSpear",
+   "class": 4060,
+   "level": 150,
+   "weapon": 59013,
+   "skills": "2004",
+   "levels": "10",
+   "method": "best",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK150_BowlingBash",
+   "class": 4060,
+   "level": 150,
+   "weapon": 59012,
+   "skills": "62",
+   "levels": "10",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK175_SonicWave",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "2002",
+   "levels": "10",
+   "versus": "LK99_BowlingBash",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "RK175_HundredSpear",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59013,
+   "skills": "2004",
+   "levels": "10",
+   "method": "best",
+   "versus": "LK99_BowlingBash",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "RK175_BowlingBash",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "62",
+   "levels": "10",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK175_WindCutter_area",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "2005",
+   "levels": "5",
+   "versus": "RK175_SonicWave",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "RK175_IgnitionBreak_area",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "2006s",
+   "levels": "5",
+   "versus": "RK175_SonicWave",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "RK175_DragonBreath_area",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "2008",
+   "levels": "10",
+   "how": "pos",
+   "extra": "whisper npc:KoTest mount#2;wait 1",
+   "versus": "RK175_SonicWave",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_kept_LK99_BowlingBash",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "62",
+   "levels": "10",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK175_SonicWave_EnchantBlade",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "2002",
+   "levels": "10",
+   "versus": "LK99_BowlingBash",
+   "pre": "2001:5:self:once"
+  },
+  {
+   "id": "RK175_SonicWave_GiantGrowth",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "2002",
+   "levels": "10",
+   "versus": "LK99_BowlingBash",
+   "extra": "whisper npc:KoTest rune#2014;wait 1"
+  },
+  {
+   "id": "RK175_SonicWave_FightingSpirit",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "2002",
+   "levels": "10",
+   "versus": "LK99_BowlingBash",
+   "extra": "whisper npc:KoTest rune#2018;wait 1"
+  },
+  {
+   "id": "RK175_attacks",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "LK99_BowlingBash"
+  },
+  {
+   "id": "RK175_attacks_GiantGrowth",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "LK99_BowlingBash",
+   "extra": "whisper npc:KoTest rune#2014;wait 1"
+  },
+  {
+   "id": "RK175_attacks_EnchantBlade",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59012,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "LK99_BowlingBash",
+   "pre": "2001:5:self:once"
+  },
+  {
+   "id": "RK99_job1_BowlingBash",
+   "class": 4060,
+   "level": 99,
+   "weapon": 59012,
+   "skills": "62",
+   "levels": "10",
+   "versus": "LK99_BowlingBash",
+   "extra": "whisper npc:KoTest joblvl#-99;wait 1"
+  }
+ ]
+}

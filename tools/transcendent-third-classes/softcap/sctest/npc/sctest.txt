@@ -1,0 +1,125 @@
+//===== soft-cap test helper (rig only) ==========================
+//   whisper npc:ScTest case#<n>     build test character <n> (invariant.py names them)
+//   whisper npc:ScTest raw#<job>#<blvl>#<jlvl>   that job and level, stats reset, nothing worn
+//   whisper npc:ScTest stat#<1-6>#<n>            raise STR..LUK by n, as far as the job's cap allows
+//   whisper npc:ScTest up#<1-6>#<n>              the same with stat points, as the status window does
+//   whisper npc:ScTest bonus#<1-6>#<n>           +n to that stat as an item would give it
+//   whisper npc:ScTest points#<n>                set the free stat points
+//   whisper npc:ScTest refresh                   send the whole status window again
+//   whisper npc:ScTest info                      level, free points and the six base stats
+//   whisper npc:ScTest exp#<n>                   gain n base levels through EXP
+//   whisper npc:ScTest mkparty / party / joinparty#<id> / leaveparty
+//   whisper npc:ScTest learn#<skill id>[#<level>]
+-	script	ScTest	-1,{
+OnWhisperGlobal:
+	.@c$ = @whispervar0$;
+	.@a = atoi(@whispervar1$);
+	.@b = atoi(@whispervar2$);
+	setarray .@st[1], bStr, bAgi, bVit, bInt, bDex, bLuk;
+	if (.@c$ == "case" || .@c$ == "raw") {
+		sc_end SC_ALL;
+		bonus_script_clear 1;
+		nude;
+		clearitem;
+		if (.@c$ == "raw") {
+			callsub S_Job, .@a, .@b, atoi(@whispervar3$);
+		} else if (.@a == 1) {            // High Wizard, 99 INT 99 DEX, Blessing and Increase AGI
+			callsub S_Job, 4010, 99, 70;
+			statusup2 bInt, 98; statusup2 bDex, 98; statusup2 bVit, 40;
+			sc_start SC_BLESSING, 600000, 10; sc_start SC_INCREASEAGI, 600000, 10;
+		} else if (.@a == 2) {     // Assassin Cross, 99 AGI, katar, Berserk Potion
+			callsub S_Job, 4013, 99, 70;
+			statusup2 bAgi, 98; statusup2 bStr, 98; statusup2 bDex, 40;
+			getitem 1250, 1; equip 1250;
+			sc_start SC_ASPDPOTION2, 600000, 9;
+		} else if (.@a == 3) {     // Lord Knight, 99 VIT 99 STR
+			callsub S_Job, 4008, 99, 70;
+			statusup2 bVit, 98; statusup2 bStr, 98; statusup2 bAgi, 30;
+			getitem 1116, 1; equip 1116;
+		} else if (.@a == 4) {     // Sniper, exactly 99 base DEX and AGI, with bonuses on top
+			callsub S_Job, 4012, 99, 70;
+			statusup2 bDex, 98; statusup2 bAgi, 98; statusup2 bLuk, 30;
+			getitem 1701, 1; equip 1701;
+			bonus_script "{ bonus bDex,30; bonus bAgi,12; bonus bLuk,7; }", 600, 0;
+			sc_start SC_BLESSING, 600000, 10;
+		} else if (.@a == 5) {     // a fresh Novice
+			callsub S_Job, 0, 1, 1;
+		} else if (.@a == 6) {     // Knight, a mixed build
+			callsub S_Job, 7, 99, 50;
+			statusup2 bStr, 69; statusup2 bAgi, 69; statusup2 bVit, 49; statusup2 bDex, 39; statusup2 bLuk, 19;
+		} else if (.@a == 7) {     // Baby Knight at its cap of 80
+			callsub S_Job, 4030, 99, 50;
+			statusup2 bStr, 79; statusup2 bVit, 79; statusup2 bDex, 30;
+		} else if (.@a == 8) {     // High Priest, Blessing, Gloria, Angelus
+			callsub S_Job, 4009, 99, 70;
+			statusup2 bInt, 98; statusup2 bDex, 79; statusup2 bVit, 59;
+			sc_start SC_BLESSING, 600000, 10; sc_start SC_GLORIA, 600000, 5; sc_start SC_ANGELUS, 600000, 10;
+		} else if (.@a == 9) {     // High Wizard at the classic instant cast: 99 DEX and +51 from bonuses (case#9#<job bonus DEX>)
+			callsub S_Job, 4010, 99, 70;
+			statusup2 bInt, 98; statusup2 bDex, 98;
+			bonus_script "{ bonus bDex," + (51 - .@b) + "; }", 600, 0;
+		} else if (.@a == 10) {    // Super Novice
+			callsub S_Job, 23, 99, 99;
+			statusup2 bStr, 59; statusup2 bAgi, 59; statusup2 bVit, 39; statusup2 bInt, 59; statusup2 bDex, 59; statusup2 bLuk, 9;
+		} else if (.@a == 11) {    // Star Gladiator
+			callsub S_Job, 4047, 99, 50;
+			statusup2 bStr, 89; statusup2 bAgi, 89; statusup2 bDex, 49;
+		} else if (.@a == 12) {    // Soul Linker
+			callsub S_Job, 4049, 99, 50;
+			statusup2 bInt, 98; statusup2 bDex, 89; statusup2 bVit, 20;
+		}
+		percentheal 100, 100;
+		warp "prt_fild08", 170, 375;   // an open cell: the casters cast on it
+		dispbottom "ScTest: " + .@c$ + " " + .@a + " done";
+	} else if (.@c$ == "stat") {
+		statusup2 .@st[.@a], .@b;
+		dispbottom "ScTest: stat " + .@a + " now " + readparam(.@st[.@a]);
+	} else if (.@c$ == "up") {
+		for (.@i = 0; .@i < .@b; .@i++)
+			statusup .@st[.@a];
+		dispbottom "ScTest: up " + .@a + " now " + readparam(.@st[.@a]) + " points " + StatusPoint;
+	} else if (.@c$ == "bonus") {
+		setarray .@n$[1], "bStr", "bAgi", "bVit", "bInt", "bDex", "bLuk";
+		bonus_script "{ bonus " + .@n$[.@a] + "," + .@b + "; }", 600, 0;
+		dispbottom "ScTest: bonus " + .@a + " " + .@b;
+	} else if (.@c$ == "points") {
+		StatusPoint = .@a;
+		dispbottom "ScTest: points " + StatusPoint;
+	} else if (.@c$ == "resetstat") {
+		resetstatus;
+		dispbottom "ScTest: reset points " + StatusPoint;
+	} else if (.@c$ == "refresh") {
+		getmapxy .@m$, .@x, .@y, BL_PC;
+		warp .@m$, .@x, .@y;
+	} else if (.@c$ == "exp") {           // exp#<n>: n times the EXP the next level needs (a level each)
+		for (.@i = 0; .@i < .@a; .@i++)
+			getexp2 NextBaseExp - BaseExp, 0;
+		dispbottom "ScTest: exp blvl " + BaseLevel + " next " + NextBaseExp + " points " + StatusPoint;
+	} else if (.@c$ == "mkparty") {       // a party of one; prints its id
+		party_create "sctest" + rand(1000, 9999), getcharid(0);
+	} else if (.@c$ == "party") {         // the party's id (a new party has one a moment after mkparty)
+		dispbottom "ScTest: party " + getcharid(1);
+	} else if (.@c$ == "learn") {         // learn#<skill id>[#<level>]
+		skill .@a, max(1, .@b), SKILL_PERM_GRANT;   // kept although the job's tree lacks it
+		dispbottom "ScTest: learn " + .@a + " level " + getskilllv(.@a);
+	} else if (.@c$ == "joinparty") {     // joinparty#<party id>
+		party_addmember .@a, getcharid(0);
+		dispbottom "ScTest: party " + getcharid(1);
+	} else if (.@c$ == "leaveparty") {
+		if (getcharid(1)) party_delmember getcharid(0), getcharid(1);
+		dispbottom "ScTest: party " + getcharid(1);
+	} else if (.@c$ == "info") {
+		dispbottom "ScTest: info job " + Class + " blvl " + BaseLevel + " jlvl " + JobLevel + " points " + StatusPoint + " stats " + readparam(bStr) + "/" + readparam(bAgi) + "/" + readparam(bVit) + "/" + readparam(bInt) + "/" + readparam(bDex) + "/" + readparam(bLuk) + " maxweight " + MaxWeight + " next " + NextBaseExp;
+	}
+	end;
+
+S_Job:
+	jobchange getarg(0);
+	atcommand "@blvl -" + MAX_LEVEL;
+	if (getarg(1) > 1) atcommand "@blvl " + (getarg(1) - 1);
+	atcommand "@joblvl -" + MAX_LEVEL;
+	if (getarg(2) > 1) atcommand "@joblvl " + (getarg(2) - 1);
+	resetstatus;
+	atcommand "@allskill";
+	return;
+}

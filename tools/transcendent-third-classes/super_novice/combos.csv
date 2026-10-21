@@ -1,0 +1,5 @@
+tier,items,script,desc
+1,Greenhorn_Cap Greenhorn_Plate Greenhorn_Manteau Greenhorn_Boots,"bonus bAllStats,1; bonus bMaxHPrate,3;",All stats +1|MaxHP +3%
+2,Wayfarer_Cap Wayfarer_Plate Wayfarer_Manteau Wayfarer_Boots,"bonus bAllStats,2; bonus bMaxHPrate,5;",All stats +2|MaxHP +5%
+3,Veteran_Cap Veteran_Plate Veteran_Manteau Veteran_Boots,"bonus bAllStats,3; bonus bMaxHPrate,5; bonus bMaxSPrate,5;",All stats +3|MaxHP +5%|MaxSP +5%
+4,Paragon_Cap Paragon_Plate Paragon_Manteau Paragon_Boots,"bonus bAllStats,4; bonus bMaxHPrate,7; bonus bMaxSPrate,7;",All stats +4|MaxHP +7%|MaxSP +7%

@@ -1,0 +1,52 @@
+//===== transcendent-third-classes: Expanded Super Novice ==
+//= Expanded Super Novice for pre-renewal: the Super Novice's advancement.
+//=
+//= A Super Novice at base level 99 and job level 99, with no skill
+//= points left, advances here. It keeps every skill it has (the
+//= new class's tree inherits them) and may learn a share of the
+//= second classes' skills, as in renewal; its job level starts
+//= again at 1 and runs to 70, and its base level runs to 175.
+//==============================================================
+
+aldeba_in,220,167,5	script	Old Novice Nodor#esn_prere	86,{
+	.@n$ = "[Old Novice Nodor]";
+	if (Class == Job_Super_Novice_E) {
+		mes .@n$;
+		mes "Still a Novice, and more than anyone thought a Novice could be.";
+		mes "Clocks, bulls and old swords carry gear cut for your kind. Go and look.";
+		close;
+	}
+	if (Class != Job_SuperNovice) {
+		mes .@n$;
+		mes "A Super Novice who has learned all a Super Novice can learn goes on here: base level 99 and job level 99.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 99) {
+		mes .@n$;
+		mes "You are not ready. Come back at base level 99 and job level 99.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "They said a Novice stops where the real jobs begin. You did not. From here you go on as an ^0000FFExpanded Super Novice^000000.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 70, with skill points for skills no Novice was meant to learn.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I am ready.:Not yet.") == 2) {
+		mes .@n$;
+		mes "The road will wait.";
+		close;
+	}
+	jobchange Job_Super_Novice_E;
+	mes .@n$;
+	mes "It is done. Go and learn what your new road teaches.";
+	close;
+}

@@ -1,0 +1,65 @@
+//===== rebellion ==============================================
+//= Rebellion for pre-renewal: the Gunslinger's advancement.
+//=
+//= A Gunslinger at base level 99 and job level 70, with no skill
+//= points left, advances here. It keeps every Gunslinger skill (the
+//= new class's tree inherits them), its job level starts again
+//= at 1 and runs to 60, and its base level runs to 175.
+//= There is no rebirth and no other way to the class.
+//==============================================================
+
+que_ng,156,167,3	script	Old Hand Jesse#rl_prere	901,{
+	.@n$ = "[Old Hand Jesse]";
+	if (Class == Job_Rebellion) {
+		mes .@n$;
+		mes "A Rebellion. Not many get this far.";
+		mes "The guns made for your kind are out past Einbroch, in the mines, the dig sites and the labs. Go and take them.";
+		close;
+	}
+	if (Class != Job_Gunslinger) {
+		mes .@n$;
+		mes "A Gunslinger who has learned all a Gunslinger can learn goes on here: base level 99 and job level 70.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 70) {
+		mes .@n$;
+		mes "You are not ready. Come back at base level 99 and job level 70.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have learned all a Gunslinger can learn. From here you go on as a ^0000FFRebellion^000000.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 60, with skill points for your new skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I am ready.:Not yet.") == 2) {
+		mes .@n$;
+		mes "The road will wait.";
+		close;
+	}
+	jobchange Job_Rebellion;
+	mes .@n$;
+	mes "It is done. Go and learn what your new road teaches.";
+	close;
+}
+
+que_ng,148,167,5	script	Gunsmith#rl_prere	83,{
+	if (Class != Job_Rebellion) {
+		mes "[Gunsmith]";
+		mes "These rounds are for Rebellions.";
+		close;
+	}
+	callshop "rebellion_shop",1;
+	end;
+}
+
+// Full Metal Jacket, Grenade Launcher (mine), Dragon Tail Missile, Slug Bullet, Special Alloy Trap
+-	shop	rebellion_shop	-1,7663:-1,7664:-1,7665:-1,25187:-1,7940:-1

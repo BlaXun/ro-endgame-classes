@@ -1,0 +1,321 @@
+{
+ "_about": "Level 175, first round: the Rebellion against the Gunslinger (its base class at 99: an advancement is that class's transcendence, target about 1.5 times its single-target damage). See README.md.",
+ "load": [
+  "mods/level175-core",
+  "mods/expanded-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchor",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "GS_RapidShower",
+   "class": 24,
+   "level": 99,
+   "weapon": 59005,
+   "ammo": 13200,
+   "skills": "515",
+   "levels": "10",
+   "step": 0.3
+  },
+  {
+   "id": "GS_Tracking",
+   "class": 24,
+   "level": 99,
+   "weapon": 59006,
+   "ammo": 13200,
+   "skills": "512",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "id": "GS_Desperado_area",
+   "class": 24,
+   "level": 99,
+   "weapon": 59005,
+   "ammo": 13200,
+   "skills": "516s",
+   "levels": "10",
+   "step": 0.3
+  },
+  {
+   "id": "GS_SpreadAttack_area",
+   "class": 24,
+   "level": 99,
+   "weapon": 59008,
+   "ammo": 13200,
+   "skills": "520",
+   "levels": "10",
+   "step": 0.3
+  },
+  {
+   "id": "L99_RL_Rifle_MassSpiral_AMBlast",
+   "class": 4215,
+   "weapon": 59006,
+   "ammo": 13200,
+   "skills": "2553,2569",
+   "levels": "5,5",
+   "method": "best",
+   "level": 99,
+   "versus": "GS_RapidShower"
+  },
+  {
+   "id": "L99_RL_Shotgun_BB_Slug_SStorm",
+   "class": 4215,
+   "weapon": 59008,
+   "ammo": 13200,
+   "skills": "2554,2570,2557",
+   "levels": "10,5,5",
+   "method": "best",
+   "level": 99,
+   "versus": "GS_RapidShower"
+  },
+  {
+   "id": "L99_RL_Grenade_HowlingMine_DragonTail",
+   "class": 4215,
+   "weapon": 59009,
+   "ammo": 13203,
+   "skills": "2562,2566",
+   "levels": "5,10",
+   "pre": "2560:1",
+   "method": "best",
+   "level": 99,
+   "versus": "GS_RapidShower",
+   "extra": "whisper npc:KoTest stats#70#99#50#1#99#1;wait 2"
+  },
+  {
+   "id": "L130_RL_Rifle_MassSpiral_AMBlast",
+   "class": 4215,
+   "weapon": 59006,
+   "ammo": 13200,
+   "skills": "2553,2569",
+   "levels": "5,5",
+   "method": "best",
+   "level": 130,
+   "versus": "GS_RapidShower"
+  },
+  {
+   "id": "L130_RL_Shotgun_BB_Slug_SStorm",
+   "class": 4215,
+   "weapon": 59008,
+   "ammo": 13200,
+   "skills": "2554,2570,2557",
+   "levels": "10,5,5",
+   "method": "best",
+   "level": 130,
+   "versus": "GS_RapidShower"
+  },
+  {
+   "id": "L130_RL_Grenade_HowlingMine_DragonTail",
+   "class": 4215,
+   "weapon": 59009,
+   "ammo": 13203,
+   "skills": "2562,2566",
+   "levels": "5,10",
+   "pre": "2560:1",
+   "method": "best",
+   "level": 130,
+   "versus": "GS_RapidShower",
+   "extra": "whisper npc:KoTest stats#70#99#50#1#120#1;wait 2"
+  },
+  {
+   "id": "L150_RL_Rifle_MassSpiral_AMBlast",
+   "class": 4215,
+   "weapon": 59006,
+   "ammo": 13200,
+   "skills": "2553,2569",
+   "levels": "5,5",
+   "method": "best",
+   "level": 150,
+   "versus": "GS_RapidShower"
+  },
+  {
+   "id": "L150_RL_Shotgun_BB_Slug_SStorm",
+   "class": 4215,
+   "weapon": 59008,
+   "ammo": 13200,
+   "skills": "2554,2570,2557",
+   "levels": "10,5,5",
+   "method": "best",
+   "level": 150,
+   "versus": "GS_RapidShower"
+  },
+  {
+   "id": "L150_RL_Grenade_HowlingMine_DragonTail",
+   "class": 4215,
+   "weapon": 59009,
+   "ammo": 13203,
+   "skills": "2562,2566",
+   "levels": "5,10",
+   "pre": "2560:1",
+   "method": "best",
+   "level": 150,
+   "versus": "GS_RapidShower",
+   "extra": "whisper npc:KoTest stats#70#99#50#1#135#1;wait 2"
+  },
+  {
+   "id": "L175_RL_Rifle_MassSpiral_AMBlast",
+   "class": 4215,
+   "weapon": 59006,
+   "ammo": 13200,
+   "skills": "2553,2569",
+   "levels": "5,5",
+   "method": "best",
+   "level": 175,
+   "versus": "GS_RapidShower",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "L175_RL_Shotgun_BB_Slug_SStorm",
+   "class": 4215,
+   "weapon": 59008,
+   "ammo": 13200,
+   "skills": "2554,2570,2557",
+   "levels": "10,5,5",
+   "method": "best",
+   "level": 175,
+   "versus": "GS_RapidShower",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "L175_RL_Grenade_HowlingMine_DragonTail",
+   "class": 4215,
+   "weapon": 59009,
+   "ammo": 13203,
+   "skills": "2562,2566",
+   "levels": "5,10",
+   "pre": "2560:1",
+   "method": "best",
+   "level": 175,
+   "versus": "GS_RapidShower",
+   "aim": [
+    1.35,
+    1.65
+   ],
+   "extra": "whisper npc:KoTest stats#70#99#50#1#150#1;wait 2"
+  },
+  {
+   "id": "L175_RL_FireDance_area",
+   "class": 4215,
+   "weapon": 59005,
+   "ammo": 13201,
+   "skills": "2561s",
+   "levels": "10",
+   "level": 175,
+   "versus": "L175_RL_Rifle_MassSpiral_AMBlast",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_RL_RoundTrip_area",
+   "class": 4215,
+   "weapon": 59007,
+   "ammo": 13200,
+   "skills": "2565s",
+   "levels": "10",
+   "step": 0.3,
+   "level": 175,
+   "versus": "L175_RL_Rifle_MassSpiral_AMBlast",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_RL_FireRain_area",
+   "class": 4215,
+   "weapon": 59007,
+   "ammo": 13200,
+   "skills": "2567",
+   "levels": "5",
+   "how": "pos",
+   "step": 0.5,
+   "method": "best",
+   "level": 175,
+   "versus": "L175_RL_Rifle_MassSpiral_AMBlast",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_RL_ShatterStorm_area",
+   "class": 4215,
+   "weapon": 59008,
+   "ammo": 13200,
+   "skills": "2557",
+   "levels": "5",
+   "method": "best",
+   "step": 0.4,
+   "level": 175,
+   "versus": "L175_RL_Rifle_MassSpiral_AMBlast",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_kept_GS_RapidShower",
+   "class": 4215,
+   "level": 175,
+   "weapon": 59005,
+   "ammo": 13200,
+   "skills": "515",
+   "levels": "10",
+   "step": 0.3,
+   "versus": "GS_RapidShower"
+  },
+  {
+   "id": "L175_kept_GS_Tracking",
+   "class": 4215,
+   "level": 175,
+   "weapon": 59006,
+   "ammo": 13200,
+   "skills": "512",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "GS_Tracking"
+  },
+  {
+   "id": "L175_kept_GS_Desperado_area",
+   "class": 4215,
+   "level": 175,
+   "weapon": 59005,
+   "ammo": 13200,
+   "skills": "516s",
+   "levels": "10",
+   "step": 0.3,
+   "versus": "GS_Desperado_area"
+  },
+  {
+   "id": "L175_kept_GS_SpreadAttack_area",
+   "class": 4215,
+   "level": 175,
+   "weapon": 59008,
+   "ammo": 13200,
+   "skills": "520",
+   "levels": "10",
+   "step": 0.3,
+   "versus": "GS_SpreadAttack_area"
+  }
+ ]
+}

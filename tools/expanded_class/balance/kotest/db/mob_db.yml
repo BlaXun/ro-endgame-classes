@@ -1,0 +1,189 @@
+Header:
+  Type: MOB_DB
+  Version: 5
+
+Body:
+  - Id: 25500
+    AegisName: KO_DUMMY
+    Name: Test Dummy
+    Level: 80
+    Hp: 50000000
+    Attack: 1
+    Attack2: 1
+    Defense: 30
+    MagicDefense: 10
+    Str: 1
+    Agi: 1
+    Vit: 30
+    Int: 1
+    Dex: 1
+    Luk: 1
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Medium
+    Race: Formless
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 1000
+    AttackDelay: 5000
+    AttackMotion: 500
+    DamageMotion: 1
+    Ai: 01
+    Modes:
+      NoRandomWalk: true
+  - Id: 25503
+    AegisName: KO_ANCHORED_DUMMY
+    Name: Anchored Dummy
+    Level: 80
+    Hp: 50000000
+    Attack: 1
+    Attack2: 1
+    Defense: 30
+    MagicDefense: 10
+    Str: 1
+    Agi: 1
+    Vit: 30
+    Int: 1
+    Dex: 1
+    Luk: 1
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Medium
+    Race: Formless
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 1000
+    AttackDelay: 5000
+    AttackMotion: 500
+    DamageMotion: 1
+    Ai: 06
+    Modes:
+      NoRandomWalk: true
+      KnockBackImmune: true
+  - Id: 25504
+    AegisName: KO_MDEF_DUMMY
+    Name: Warded Dummy
+    Level: 80
+    Hp: 50000000
+    Attack: 1
+    Attack2: 1
+    Defense: 30
+    MagicDefense: 40
+    Str: 1
+    Agi: 1
+    Vit: 50
+    Int: 80
+    Dex: 1
+    Luk: 1
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Medium
+    Race: Formless
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 1000
+    AttackDelay: 5000
+    AttackMotion: 500
+    DamageMotion: 1
+    Ai: 06
+    Modes:
+      NoRandomWalk: true
+      KnockBackImmune: true
+  # The anchor: pre-renewal's Abysmal Knight (1219) as a target. Its level, defences, stats,
+  # size, race and element; it does not move, hit back or die. It cannot be knocked back: the real
+  # monster walks straight back into melee, which a scripted client cannot follow (measured with a
+  # knockable anchor, Bowling Bash fell from 3775 to 152 dmg/s because the client stood still).
+  - Id: 25506
+    AegisName: KO_ANCHOR_DUMMY
+    Name: Anchor Dummy
+    Level: 79
+    Hp: 50000000
+    Attack: 1
+    Attack2: 1
+    Defense: 55
+    MagicDefense: 50
+    Str: 66
+    Agi: 68
+    Vit: 64
+    Int: 25
+    Dex: 135
+    Luk: 50
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Large
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 4
+    WalkSpeed: 1000
+    AttackDelay: 5000
+    AttackMotion: 500
+    DamageMotion: 1
+    Ai: 06
+    Modes:
+      NoRandomWalk: true
+      KnockBackImmune: true
+  # The same with the Abysmal Knight's own HP, for the pack of five (pack5): it dies.
+  - Id: 25507
+    AegisName: KO_ANCHOR_PACK
+    Name: Anchor Pack Monster
+    Level: 79
+    Hp: 36140
+    Attack: 1
+    Attack2: 1
+    Defense: 55
+    MagicDefense: 50
+    Str: 66
+    Agi: 68
+    Vit: 64
+    Int: 25
+    Dex: 135
+    Luk: 50
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Large
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 4
+    WalkSpeed: 1000
+    AttackDelay: 5000
+    AttackMotion: 500
+    DamageMotion: 1
+    Ai: 06
+    Modes:
+      NoRandomWalk: true
+      KnockBackImmune: true
+  - Id: 25508
+    AegisName: KO_PLAIN_PACK
+    Name: Plain Pack Monster
+    Level: 80
+    Hp: 36140
+    Attack: 1
+    Attack2: 1
+    Defense: 30
+    MagicDefense: 10
+    Str: 1
+    Agi: 1
+    Vit: 30
+    Int: 1
+    Dex: 1
+    Luk: 1
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Medium
+    Race: Formless
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 1000
+    AttackDelay: 5000
+    AttackMotion: 500
+    DamageMotion: 1
+    Ai: 06
+    Modes:
+      NoRandomWalk: true
+      KnockBackImmune: true

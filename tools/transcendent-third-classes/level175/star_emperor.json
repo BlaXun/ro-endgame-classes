@@ -1,0 +1,157 @@
+{
+ "_about": "Level 175, first round: the Star Emperor against the Star Gladiator (its base class at 99: an advancement is that class's transcendence, target about 1.5 times its single-target damage). See README.md.",
+ "load": [
+  "mods/level175-core",
+  "mods/expanded-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchor",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "SG_Kicks",
+   "class": 4047,
+   "level": 99,
+   "weapon": 59010,
+   "skills": "413,415,417,419,attack",
+   "levels": "7,7,7,7,1",
+   "pre": "412:1:self:once,414:1:self:once,416:1:self:once,418:1:self:once",
+   "seq": true,
+   "step": 0.2
+  },
+  {
+   "id": "SG_attacks",
+   "class": 4047,
+   "level": 99,
+   "weapon": 59010,
+   "skills": "attack",
+   "levels": "1"
+  },
+  {
+   "id": "L99_SE_ProminenceKick_SolarBurst",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "2593,2592s",
+   "levels": "7,10",
+   "pre": "2583:3:self:once",
+   "level": 99,
+   "versus": "SG_Kicks"
+  },
+  {
+   "id": "L99_SE_FallingStar_attacks",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "attack",
+   "levels": "1",
+   "pre": "2583:3:self:once,2584:10:self:once,2580:7",
+   "level": 99,
+   "versus": "SG_Kicks"
+  },
+  {
+   "id": "L130_SE_ProminenceKick_SolarBurst",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "2593,2592s",
+   "levels": "7,10",
+   "pre": "2583:3:self:once",
+   "level": 130,
+   "versus": "SG_Kicks"
+  },
+  {
+   "id": "L130_SE_FallingStar_attacks",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "attack",
+   "levels": "1",
+   "pre": "2583:3:self:once,2584:10:self:once,2580:7",
+   "level": 130,
+   "versus": "SG_Kicks"
+  },
+  {
+   "id": "L150_SE_ProminenceKick_SolarBurst",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "2593,2592s",
+   "levels": "7,10",
+   "pre": "2583:3:self:once",
+   "level": 150,
+   "versus": "SG_Kicks"
+  },
+  {
+   "id": "L150_SE_FallingStar_attacks",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "attack",
+   "levels": "1",
+   "pre": "2583:3:self:once,2584:10:self:once,2580:7",
+   "level": 150,
+   "versus": "SG_Kicks"
+  },
+  {
+   "id": "L175_SE_ProminenceKick_SolarBurst",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "2593,2592s",
+   "levels": "7,10",
+   "pre": "2583:3:self:once",
+   "level": 175,
+   "versus": "SG_Kicks",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "L175_SE_FallingStar_attacks",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "attack",
+   "levels": "1",
+   "pre": "2583:3:self:once,2584:10:self:once,2580:7",
+   "level": 175,
+   "versus": "SG_Kicks",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "L175_SE_NewMoon_FullMoon_area",
+   "class": 4239,
+   "weapon": 59010,
+   "skills": "2579s,2576s",
+   "levels": "7,10",
+   "pre": "2583:3:self:once",
+   "level": 175,
+   "versus": "L175_SE_ProminenceKick_SolarBurst",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_kept_SG_Kicks",
+   "class": 4239,
+   "level": 175,
+   "weapon": 59010,
+   "skills": "413,415,417,419,attack",
+   "levels": "7,7,7,7,1",
+   "pre": "412:1:self:once,414:1:self:once,416:1:self:once,418:1:self:once",
+   "seq": true,
+   "step": 0.2,
+   "versus": "SG_Kicks"
+  },
+  {
+   "id": "L175_kept_SG_attacks",
+   "class": 4239,
+   "level": 175,
+   "weapon": 59010,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "SG_Kicks"
+  }
+ ]
+}

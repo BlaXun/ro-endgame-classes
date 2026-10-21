@@ -1,0 +1,420 @@
+{
+ "_about": "Level 175, first round: the Expanded Super Novice against the Super Novice (its base class at 99: an advancement is that class's transcendence, target about 1.5 times its single-target damage). See README.md. It has no damage skill of its own: the same skills are measured on both. All runs on the plain dummy, so bolts and melee compare. Round 2 adds the second-class skills the Expanded Super Novice learns.",
+ "load": [
+  "mods/level175-core",
+  "mods/expanded-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchored",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "SN_FireBolt",
+   "class": 23,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "19",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "id": "SN_attacks",
+   "class": 23,
+   "level": 99,
+   "weapon": 59002,
+   "skills": "attack",
+   "levels": "1"
+  },
+  {
+   "id": "SN_Bash",
+   "class": 23,
+   "level": 99,
+   "weapon": 59002,
+   "skills": "5",
+   "levels": "10",
+   "step": 0.2
+  },
+  {
+   "id": "SN_MagnumBreak_area",
+   "class": 23,
+   "level": 99,
+   "weapon": 59002,
+   "skills": "7s",
+   "levels": "10",
+   "step": 0.3
+  },
+  {
+   "id": "SN_Thunderstorm_area",
+   "class": 23,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "21",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ]
+  },
+  {
+   "id": "L99_ESN_FireBolt",
+   "class": 4190,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "19",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_FireBolt"
+  },
+  {
+   "id": "L99_ESN_Bash",
+   "class": 4190,
+   "level": 99,
+   "weapon": 59002,
+   "skills": "5",
+   "levels": "10",
+   "step": 0.2,
+   "versus": "SN_Bash"
+  },
+  {
+   "id": "L99_ESN_attacks",
+   "class": 4190,
+   "level": 99,
+   "weapon": 59002,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "SN_attacks"
+  },
+  {
+   "id": "L130_ESN_FireBolt",
+   "class": 4190,
+   "level": 130,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "19",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_FireBolt"
+  },
+  {
+   "id": "L130_ESN_Bash",
+   "class": 4190,
+   "level": 130,
+   "weapon": 59002,
+   "skills": "5",
+   "levels": "10",
+   "step": 0.2,
+   "versus": "SN_Bash"
+  },
+  {
+   "id": "L130_ESN_attacks",
+   "class": 4190,
+   "level": 130,
+   "weapon": 59002,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "SN_attacks"
+  },
+  {
+   "id": "L150_ESN_FireBolt",
+   "class": 4190,
+   "level": 150,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "19",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_FireBolt"
+  },
+  {
+   "id": "L150_ESN_Bash",
+   "class": 4190,
+   "level": 150,
+   "weapon": 59002,
+   "skills": "5",
+   "levels": "10",
+   "step": 0.2,
+   "versus": "SN_Bash"
+  },
+  {
+   "id": "L150_ESN_attacks",
+   "class": 4190,
+   "level": 150,
+   "weapon": 59002,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "SN_attacks"
+  },
+  {
+   "id": "L175_ESN_FireBolt",
+   "class": 4190,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "19",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_FireBolt"
+  },
+  {
+   "id": "L175_ESN_Bash",
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "skills": "5",
+   "levels": "10",
+   "step": 0.2,
+   "versus": "SN_FireBolt"
+  },
+  {
+   "id": "L175_ESN_attacks",
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "SN_FireBolt"
+  },
+  {
+   "id": "L175_ESN_MagnumBreak_area",
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "skills": "7s",
+   "levels": "10",
+   "step": 0.3,
+   "versus": "SN_MagnumBreak_area"
+  },
+  {
+   "id": "L175_ESN_Thunderstorm_area",
+   "class": 4190,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "21",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_Thunderstorm_area"
+  },
+  {
+   "id": "L175_kept_SN_FireBolt",
+   "class": 4190,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "19",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_FireBolt"
+  },
+  {
+   "id": "L175_kept_SN_attacks",
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "skills": "attack",
+   "levels": "1",
+   "versus": "SN_attacks"
+  },
+  {
+   "id": "L175_kept_SN_Bash",
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "skills": "5",
+   "levels": "10",
+   "step": 0.2,
+   "versus": "SN_Bash"
+  },
+  {
+   "id": "L175_kept_SN_MagnumBreak_area",
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "skills": "7s",
+   "levels": "10",
+   "step": 0.3,
+   "versus": "SN_MagnumBreak_area"
+  },
+  {
+   "id": "L175_kept_SN_Thunderstorm_area",
+   "class": 4190,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "21",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_Thunderstorm_area"
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_JupitelThunder",
+   "stats": "int",
+   "skills": "84",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_Bash",
+   "aim": [
+    2.08,
+    2.54
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_HolyCross",
+   "skills": "253",
+   "levels": "10",
+   "step": 0.2,
+   "versus": "SN_Bash",
+   "aim": [
+    2.08,
+    2.54
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_EarthSpike",
+   "stats": "int",
+   "skills": "90",
+   "levels": "5",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "SN_FireBolt"
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_StormGust_area",
+   "stats": "int",
+   "skills": "89",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "L175_kept_SN_Thunderstorm_area",
+   "aim": [
+    0.0,
+    1.14
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_MeteorStorm_area",
+   "stats": "int",
+   "skills": "83",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "L175_kept_SN_Thunderstorm_area",
+   "aim": [
+    0.0,
+    1.14
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_LordOfVermilion_area",
+   "stats": "int",
+   "skills": "85",
+   "levels": "10",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "L175_kept_SN_Thunderstorm_area",
+   "aim": [
+    0.0,
+    1.14
+   ]
+  },
+  {
+   "class": 4190,
+   "level": 175,
+   "weapon": 59002,
+   "id": "L175_ESN_HeavensDrive_area",
+   "stats": "int",
+   "skills": "91",
+   "levels": "5",
+   "how": "pos",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "L175_kept_SN_Thunderstorm_area",
+   "aim": [
+    0.0,
+    1.14
+   ]
+  }
+ ]
+}

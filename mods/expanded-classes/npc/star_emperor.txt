@@ -1,0 +1,52 @@
+//===== star-emperor ===========================================
+//= Star Emperor for pre-renewal: the Star Gladiator's advancement.
+//=
+//= A Star Gladiator at base level 99 and job level 50, with no skill
+//= points left, advances here. It keeps every Star Gladiator skill (the
+//= new class's tree inherits them), its job level starts again
+//= at 1 and runs to 70, and its base level runs to 175.
+//= There is no rebirth and no other way to the class.
+//==============================================================
+
+payon,160,141,3	script	Master Haneul#se_prere	753,{
+	.@n$ = "[Master Haneul]";
+	if (Class == Job_Star_Emperor || Class == Job_Star_Emperor2) {
+		mes .@n$;
+		mes "Sun, moon and stars answer to you now, Star Emperor.";
+		mes "Those who guard the sky's light carry gear made for your kind. Seek them out.";
+		close;
+	}
+	if (Class != Job_Star_Gladiator) {
+		mes .@n$;
+		mes "A Star Gladiator who has learned all a Star Gladiator can learn goes on here: base level 99 and job level 50.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 50) {
+		mes .@n$;
+		mes "You are not ready. Come back at base level 99 and job level 50.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have learned all a Star Gladiator can learn. From here you go on as a ^0000FFStar Emperor^000000.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 70, with skill points for your new skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I am ready.:Not yet.") == 2) {
+		mes .@n$;
+		mes "The stars will wait.";
+		close;
+	}
+	jobchange Job_Star_Emperor;
+	mes .@n$;
+	mes "It is done. Go and learn what your new road teaches.";
+	close;
+}

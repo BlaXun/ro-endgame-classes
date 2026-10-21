@@ -1,0 +1,52 @@
+//===== transcendent-third-classes: Minstrel ======================================
+//= The Clown's advancement.
+//=
+//= A Clown at base level 99 and job level 70, with no skill
+//= points left, becomes a Minstrel here, beside the stock
+//= Clown changer, which is untouched. There is no other way
+//= to the class.
+//=
+//= The class is rAthena's transcendent Minstrel. It keeps every
+//= skill it had (its tree inherits the first, second and
+//= transcendent class) and adds its own; the job level starts
+//= again at 1 and runs to 70; the base level runs to 175.
+//==============================================================
+
+valkyrie,55,54,3	script	Wandering Minstrel#Valkyrie	741,{
+	.@n$ = "[Wandering Minstrel]";
+	if (Class == Job_Minstrel_T) {
+		mes .@n$;
+		mes "You chose the song. An instrument for it plays in the hands of the maid of the old mansion, and the sea queen keeps a harp that still sings.";
+		close;
+	}
+	if (Class != Job_Clown) {
+		mes .@n$;
+		mes "A Clown who has reached base level 99 and job level 70 goes on here, as a ^0000FFMinstrel^000000.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 70) {
+		mes .@n$;
+		mes "Come back at base level 99 and job level 70.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have walked the Clown's road to its end. A ^0000FFMinstrel^000000 goes on from there.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 70, with skill points for the Minstrel's own skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I take up the song.:Not yet.") == 2)
+		close;
+	jobchange Job_Minstrel_T;
+	mes .@n$;
+	mes "Welcome, Minstrel.";
+	close;
+}

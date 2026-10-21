@@ -1,0 +1,205 @@
+{
+ "LK99_SpiralPierce": {
+  "value": 1200,
+  "all": [
+   1200,
+   1200,
+   1200
+  ],
+  "versus": null,
+  "ratio": null,
+  "aim": null
+ },
+ "LK99_BowlingBash": {
+  "value": 3775,
+  "all": [
+   3775,
+   3777,
+   3768
+  ],
+  "versus": null,
+  "ratio": null,
+  "aim": null
+ },
+ "RK99_SpiralPierce": {
+  "value": 1170,
+  "all": [
+   1170,
+   1170,
+   1170
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 0.97,
+  "aim": null
+ },
+ "RK99_SonicWave": {
+  "value": 1021,
+  "all": [
+   1029,
+   1018,
+   1021
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 0.85,
+  "aim": null
+ },
+ "RK99_HundredSpear": {
+  "value": 1075,
+  "all": [
+   1067,
+   1075,
+   1070,
+   1085,
+   1047,
+   1076
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 0.9,
+  "aim": null
+ },
+ "RK130_SonicWave": {
+  "value": 1280,
+  "all": [
+   1280,
+   1277,
+   1282
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 1.07,
+  "aim": null
+ },
+ "RK130_HundredSpear": {
+  "value": 1322,
+  "all": [
+   1322,
+   1321,
+   1324,
+   1322,
+   1320,
+   1324
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 1.1,
+  "aim": null
+ },
+ "RK150_SonicWave": {
+  "value": 1378,
+  "all": [
+   1378,
+   1377,
+   1379
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 1.15,
+  "aim": null
+ },
+ "RK150_HundredSpear": {
+  "value": 1424,
+  "all": [
+   1426,
+   1421,
+   1426,
+   1424,
+   1424,
+   1420
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 1.19,
+  "aim": null
+ },
+ "RK175_SpiralPierce": {
+  "value": 1477,
+  "all": [
+   1477,
+   1477,
+   1477
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 1.23,
+  "aim": null
+ },
+ "RK175_SonicWave": {
+  "value": 1412,
+  "all": [
+   1412,
+   1413,
+   1412
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 1.18,
+  "aim": [
+   1.35,
+   1.65
+  ]
+ },
+ "RK175_HundredSpear": {
+  "value": 1456,
+  "all": [
+   1456,
+   1456,
+   1456,
+   1456,
+   1456,
+   1456
+  ],
+  "versus": "LK99_SpiralPierce",
+  "ratio": 1.21,
+  "aim": [
+   1.35,
+   1.65
+  ]
+ },
+ "RK175_BowlingBash": {
+  "value": 6362,
+  "all": [
+   6427,
+   6362,
+   6362
+  ],
+  "versus": "LK99_BowlingBash",
+  "ratio": 1.69,
+  "aim": null
+ },
+ "RK175_WindCutter_area": {
+  "value": 1252,
+  "all": [
+   1252,
+   1252,
+   1252
+  ],
+  "versus": "RK175_SonicWave",
+  "ratio": 0.89,
+  "aim": [
+   0.0,
+   0.55
+  ]
+ },
+ "RK175_IgnitionBreak_area": {
+  "value": 762,
+  "all": [
+   820,
+   762,
+   762
+  ],
+  "versus": "RK175_SonicWave",
+  "ratio": 0.54,
+  "aim": [
+   0.0,
+   0.55
+  ]
+ },
+ "RK175_DragonBreath_area": {
+  "value": 499,
+  "all": [
+   499,
+   499,
+   499
+  ],
+  "versus": "RK175_SonicWave",
+  "ratio": 0.35,
+  "aim": [
+   0.0,
+   0.55
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+id,aegis,name,tier,kind,level,power,wlv,slots,weight,look,script,desc
+63801,Greenhorn_Knife,Greenhorn's Knife,1,dagger,50,110,3,2,600,Knife,"bonus bAllStats,1; bonus bAspdRate,3;",A knife for someone who never chose one trade.|All stats +1|ASPD +3%
+63802,Greenhorn_Cap,Greenhorn's Cap,1,head,50,2,,1,200,Novice_Egg_Cap,"bonus bInt,1; bonus bMaxSP,50;",A cap that has seen every town's novice grounds.|INT +1|MaxSP +50
+63803,Greenhorn_Plate,Greenhorn's Plate,1,armor,50,4,,1,400,Novice_Plate,"bonus bMaxHP,300;","Plain plate, mended more often than it was struck.|MaxHP +300"
+63804,Greenhorn_Manteau,Greenhorn's Manteau,1,garment,50,2,,1,200,Novice_Manteau,"bonus2 bSubEle,Ele_Neutral,3;",A travelling cloak with pockets for every job's tools.|Reduces damage from ^0000FFNeutral^000000 property attacks by 3%.
+63805,Greenhorn_Boots,Greenhorn's Boots,1,shoes,50,2,,1,200,Novice_Shoes,"bonus bAgi,1; bonus bMaxHP,100;",Boots that have walked every road at least once.|AGI +1|MaxHP +100
+63806,Greenhorn_Badge,Greenhorn's Badge,1,accessory,50,0,,1,100,Earring,"bonus bDex,1; bonus bLuk,1;",A badge no guild issues: it is earned alone.|DEX +1|LUK +1
+63811,Wayfarer_Knife,Wayfarer's Knife,2,dagger,65,125,4,1,600,Main_Gauche,"bonus bAllStats,1; bonus bAspdRate,5; bonus bMatkRate,5;",A knife for someone who never chose one trade.|All stats +1|ASPD +5%|MATK +5%
+63812,Wayfarer_Cap,Wayfarer's Cap,2,head,65,3,,1,200,Egg_Shell,"bonus bInt,2; bonus bMaxSPrate,5;",A cap that has seen every town's novice grounds.|INT +2|MaxSP +5%
+63813,Wayfarer_Plate,Wayfarer's Plate,2,armor,65,5,,1,400,Novice_Plate,"bonus bMaxHPrate,5; bonus bVit,1;","Plain plate, mended more often than it was struck.|MaxHP +5%|VIT +1"
+63814,Wayfarer_Manteau,Wayfarer's Manteau,2,garment,65,3,,1,200,Novice_Manteau,"bonus2 bSubEle,Ele_Neutral,5; bonus bFlee,3;",A travelling cloak with pockets for every job's tools.|Reduces damage from ^0000FFNeutral^000000 property attacks by 5%.|FLEE +3
+63815,Wayfarer_Boots,Wayfarer's Boots,2,shoes,65,3,,1,200,Novice_Shoes,"bonus bAgi,2; bonus bMaxHPrate,3;",Boots that have walked every road at least once.|AGI +2|MaxHP +3%
+63816,Wayfarer_Badge,Wayfarer's Badge,2,accessory,65,0,,1,100,Bradium_Earing,"bonus bDex,2; bonus bLuk,2;",A badge no guild issues: it is earned alone.|DEX +2|LUK +2
+63821,Veteran_Knife,Veteran's Knife,3,dagger,80,140,4,1,600,Gladius,"bonus bAllStats,2; bonus bAspdRate,5; bonus bMatkRate,8;",A knife for someone who never chose one trade.|All stats +2|ASPD +5%|MATK +8%
+63822,Veteran_Cap,Veteran's Cap,3,head,80,4,,1,200,Super_Novice_Hat,"bonus bInt,2; bonus bStr,1; bonus bMaxSPrate,7;",A cap that has seen every town's novice grounds.|INT +2|STR +1|MaxSP +7%
+63823,Veteran_Plate,Veteran's Plate,3,armor,80,6,,1,400,Angel's_Protection,"bonus bMaxHPrate,8; bonus bVit,2;","Plain plate, mended more often than it was struck.|MaxHP +8%|VIT +2"
+63824,Veteran_Manteau,Veteran's Manteau,3,garment,80,4,,1,200,Angel's_Safeguard,"bonus2 bSubEle,Ele_Neutral,8; bonus bFlee,5;",A travelling cloak with pockets for every job's tools.|Reduces damage from ^0000FFNeutral^000000 property attacks by 8%.|FLEE +5
+63825,Veteran_Boots,Veteran's Boots,3,shoes,80,4,,1,200,Angel's_Warmth,"bonus bAgi,2; bonus bDex,1; bonus bMaxHPrate,5;",Boots that have walked every road at least once.|AGI +2|DEX +1|MaxHP +5%
+63826,Veteran_Badge,Veteran's Badge,3,accessory,80,0,,1,100,Ring_Of_Exorcism,"bonus bDex,2; bonus bLuk,2; bonus bCastrate,-3;",A badge no guild issues: it is earned alone.|DEX +2|LUK +2|Reduces cast time by 3%.
+63831,Paragon_Knife,Paragon's Knife,4,dagger,95,155,4,1,600,Damascus,"bonus bAllStats,2; bonus bAspdRate,7; bonus bMatkRate,10; bonus bCritical,5;",A knife for someone who never chose one trade.|All stats +2|ASPD +7%|MATK +10%|Critical +5
+63832,Paragon_Cap,Paragon's Cap,4,head,95,5,,1,200,Helm_Of_Angel,"bonus bInt,3; bonus bStr,2; bonus bMaxSPrate,10;",A cap that has seen every town's novice grounds.|INT +3|STR +2|MaxSP +10%
+63833,Paragon_Plate,Paragon's Plate,4,armor,95,7,,1,400,Angel's_Protection,"bonus bMaxHPrate,12; bonus bVit,3;","Plain plate, mended more often than it was struck.|MaxHP +12%|VIT +3"
+63834,Paragon_Manteau,Paragon's Manteau,4,garment,95,5,,1,200,Angel's_Safeguard,"bonus2 bSubEle,Ele_Neutral,10; bonus bFlee,8;",A travelling cloak with pockets for every job's tools.|Reduces damage from ^0000FFNeutral^000000 property attacks by 10%.|FLEE +8
+63835,Paragon_Boots,Paragon's Boots,4,shoes,95,5,,1,200,Angel's_Warmth,"bonus bAgi,3; bonus bDex,2; bonus bMaxHPrate,7;",Boots that have walked every road at least once.|AGI +3|DEX +2|MaxHP +7%
+63836,Paragon_Badge,Paragon's Badge,4,accessory,95,0,,1,100,Moonlight_Ring,"bonus bDex,3; bonus bLuk,3; bonus bCastrate,-5;",A badge no guild issues: it is earned alone.|DEX +3|LUK +3|Reduces cast time by 5%.

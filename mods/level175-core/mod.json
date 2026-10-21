@@ -1,0 +1,16 @@
+{
+  "name": "level175-core",
+  "version": "1.0.0",
+  "author": "BlaXun",
+  "description": "What the classes that level past 99 share: above 99 a base stat counts for a third and base DEX gives no cast speed, and skills that read the base level read it only up to 99. A character at 99 or below is untouched. Needed by transcendent-third-classes and expanded-classes.",
+  "requires": {
+    "app": ">=1.6.7",
+    "era": "pre-renewal"
+  },
+  "tags": [
+    "level-175",
+    "pre-renewal",
+    "lua"
+  ],
+  "homepage": "https://github.com/BlaXun/ro-endgame-classes/tree/main/mods/level175-core"
+}

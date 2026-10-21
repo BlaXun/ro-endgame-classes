@@ -1,0 +1,52 @@
+//===== transcendent-third-classes: Warlock ===========
+//= The High Wizard's advancement.
+//=
+//= A High Wizard at base level 99 and job level 70, with no skill
+//= points left, becomes a Warlock here, beside the stock
+//= High Wizard changer, which is untouched. There is no other way
+//= to the class.
+//=
+//= The class is rAthena's transcendent Warlock. It keeps every
+//= skill it had (its tree inherits the first, second and
+//= transcendent class) and adds its own; the job level starts
+//= again at 1 and runs to 70; the base level runs to 175.
+//==============================================================
+
+valkyrie,42,47,5	script	Warlock#Valkyrie	735,{
+	.@n$ = "[Warlock]";
+	if (Class == Job_Warlock_T) {
+		mes .@n$;
+		mes "You chose the elements. The Spellbook Seller in the Geffen magic school has the books you will read; the staves made for our kind are carried by those who once studied with us and went too far.";
+		close;
+	}
+	if (Class != Job_High_Wizard) {
+		mes .@n$;
+		mes "A High Wizard who has reached base level 99 and job level 70 goes on here, as a ^0000FFWarlock^000000.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 70) {
+		mes .@n$;
+		mes "Come back at base level 99 and job level 70.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have walked the High Wizard's road to its end. A ^0000FFWarlock^000000 goes on from there.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 70, with skill points for the Warlock's own skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I take the elements.:Not yet.") == 2)
+		close;
+	jobchange Job_Warlock_T;
+	mes .@n$;
+	mes "Welcome, Warlock.";
+	close;
+}

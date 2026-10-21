@@ -1,0 +1,52 @@
+//===== transcendent-third-classes: Arch Bishop ===========
+//= The High Priest's advancement.
+//=
+//= A High Priest at base level 99 and job level 70, with no skill
+//= points left, becomes an Arch Bishop here, beside the stock
+//= High Priest changer, which is untouched. There is no other way
+//= to the class.
+//=
+//= The class is rAthena's transcendent Arch Bishop. It keeps every
+//= skill it had (its tree inherits the first, second and
+//= transcendent class) and adds its own; the job level starts
+//= again at 1 and runs to 70; the base level runs to 175.
+//==============================================================
+
+valkyrie,42,42,5	script	Arch Bishop#Valkyrie	60,{
+	.@n$ = "[Arch Bishop]";
+	if (Class == Job_Arch_Bishop_T) {
+		mes .@n$;
+		mes "You chose to lead the faithful. Maces and staves blessed for our order were lost to the dead and the fallen; take them back.";
+		close;
+	}
+	if (Class != Job_High_Priest) {
+		mes .@n$;
+		mes "A High Priest who has reached base level 99 and job level 70 goes on here, as an ^0000FFArch Bishop^000000.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 70) {
+		mes .@n$;
+		mes "Come back at base level 99 and job level 70.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have walked the High Priest's road to its end. An ^0000FFArch Bishop^000000 goes on from there.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 70, with skill points for the Arch Bishop's own skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I take the bishop's path.:Not yet.") == 2)
+		close;
+	jobchange Job_Arch_Bishop_T;
+	mes .@n$;
+	mes "Welcome, Arch Bishop.";
+	close;
+}

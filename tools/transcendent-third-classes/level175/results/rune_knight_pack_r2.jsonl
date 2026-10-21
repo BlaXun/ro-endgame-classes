@@ -1,0 +1,15 @@
+{"label": "LK99_BowlingBash_step01", "run": 1, "result": {"job": 4008, "level": 99, "skills": "62", "left": 0, "seconds": 15.2}}
+{"label": "LK99_BowlingBash_step01", "run": 2, "result": {"job": 4008, "level": 99, "skills": "62", "left": 0, "seconds": 14.4}}
+{"label": "LK99_BowlingBash_step01", "run": 3, "result": {"job": 4008, "level": 99, "skills": "62", "left": 0, "seconds": 16.2}}
+{"label": "RK175_BowlingBash_step01", "run": 1, "result": {"job": 4060, "level": 175, "skills": "62", "left": 0, "seconds": 11.6}}
+{"label": "RK175_BowlingBash_step01", "run": 2, "result": {"job": 4060, "level": 175, "skills": "62", "left": 0, "seconds": 12.2}}
+{"label": "RK175_BowlingBash_step01", "run": 3, "result": {"job": 4060, "level": 175, "skills": "62", "left": 0, "seconds": 11.9}}
+{"label": "RK175_SonicWave_one_by_one_step01", "run": 1, "result": {"job": 4060, "level": 175, "skills": "2002", "left": 0, "seconds": 36.0}}
+{"label": "RK175_SonicWave_one_by_one_step01", "run": 2, "result": {"job": 4060, "level": 175, "skills": "2002", "left": 0, "seconds": 36.0}}
+{"label": "RK175_SonicWave_one_by_one_step01", "run": 3, "result": {"job": 4060, "level": 175, "skills": "2002", "left": 0, "seconds": 36.0}}
+{"label": "RK175_BowlingBash_undamped_step01", "run": 1, "result": {"job": 4060, "level": 175, "skills": "62", "left": 0, "seconds": 9.3}}
+{"label": "RK175_BowlingBash_undamped_step01", "run": 2, "result": {"job": 4060, "level": 175, "skills": "62", "left": 0, "seconds": 9.5}}
+{"label": "RK175_BowlingBash_undamped_step01", "run": 3, "result": {"job": 4060, "level": 175, "skills": "62", "left": 0, "seconds": 10.4}}
+{"label": "RK175_WindCutter_step01", "run": 1, "result": {"job": 4060, "level": 175, "skills": "2005", "left": 0, "seconds": 30.3}}
+{"label": "RK175_WindCutter_step01", "run": 2, "result": {"job": 4060, "level": 175, "skills": "2005", "left": 0, "seconds": 30.4}}
+{"label": "RK175_WindCutter_step01", "run": 3, "result": {"job": 4060, "level": 175, "skills": "2005", "left": 0, "seconds": 30.3}}

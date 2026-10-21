@@ -1,0 +1,116 @@
+{
+ "_about": "Phase 7 check: each class's frozen single-target skill with the best converted renewal weapon of its type against its transcendent class with the best pre-renewal weapon of that type (and the phase-3 test weapon), all at +0, no cards.",
+ "load": [
+  "mods/level175-core",
+  "mods/transcendent-third-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchor",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "RK_ref_1486",
+   "class": 4008,
+   "level": 99,
+   "weapon": 1486,
+   "skills": "62",
+   "levels": "10"
+  },
+  {
+   "id": "RK_new_630003",
+   "class": 4060,
+   "level": 175,
+   "weapon": 630003,
+   "skills": "2004",
+   "levels": "10",
+   "method": "best",
+   "versus": "RK_ref_1486"
+  },
+  {
+   "id": "RK_testweapon",
+   "class": 4060,
+   "level": 175,
+   "weapon": 59013,
+   "skills": "2004",
+   "levels": "10",
+   "method": "best",
+   "versus": "RK_ref_1486"
+  },
+  {
+   "id": "WL_ref_2000",
+   "class": 4010,
+   "weapon": 2000,
+   "skills": "366s,84",
+   "levels": "10,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "level": 99,
+   "stats": "int"
+  },
+  {
+   "id": "WL_new_640005",
+   "class": 4061,
+   "weapon": 640005,
+   "skills": "366s,84",
+   "levels": "10,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "level": 175,
+   "versus": "WL_ref_2000",
+   "stats": "int"
+  },
+  {
+   "id": "WL_testweapon",
+   "class": 4061,
+   "weapon": 59011,
+   "skills": "366s,84",
+   "levels": "10,10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "level": 175,
+   "versus": "WL_ref_2000",
+   "stats": "int"
+  },
+  {
+   "id": "RA_ref_1728",
+   "class": 4012,
+   "weapon": 1728,
+   "ammo": 1750,
+   "skills": "46",
+   "levels": "10",
+   "level": 99
+  },
+  {
+   "id": "RA_new_700007",
+   "class": 4062,
+   "weapon": 700007,
+   "ammo": 1750,
+   "skills": "2236",
+   "levels": "10",
+   "level": 175,
+   "versus": "RA_ref_1728"
+  },
+  {
+   "id": "RA_testweapon",
+   "class": 4062,
+   "weapon": 59004,
+   "ammo": 1750,
+   "skills": "2236",
+   "levels": "10",
+   "level": 175,
+   "versus": "RA_ref_1728"
+  }
+ ]
+}

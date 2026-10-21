@@ -1,0 +1,64 @@
+//===== kagerou-oboro ==========================================
+//= Kagerou and Oboro for pre-renewal: the Ninja's advancement.
+//=
+//= A Ninja at base level 99 and job level 70, with no skill
+//= points left, advances here. It keeps every Ninja skill (the
+//= new class's tree inherits them), its job level starts again
+//= at 1 and runs to 60, and its base level runs to 175.
+//= There is no rebirth and no other way to the class.
+//==============================================================
+
+que_ng,33,62,3	script	Kirikage#ko_prere	730,{
+	.@n$ = "[Kirikage]";
+	if (Class == Job_Kagerou || Class == Job_Oboro) {
+		mes .@n$;
+		mes "Shadow and haze. You walk the path most Ninja never find.";
+		mes "Hunt in the far east and the old ruins: the gear made for your kind is out there.";
+		close;
+	}
+	if (Class != Job_Ninja) {
+		mes .@n$;
+		mes "A Ninja who has learned all a Ninja can learn goes on here: base level 99 and job level 70.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 70) {
+		mes .@n$;
+		mes "You are not ready. Come back at base level 99 and job level 70.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have learned all a Ninja can learn. From here you go on as a ^0000FF" + (Sex == SEX_MALE ? "Kagerou" : "Oboro") + "^000000.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 60, with skill points for your new skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I am ready.:Not yet.") == 2) {
+		mes .@n$;
+		mes "The shadows will wait.";
+		close;
+	}
+	jobchange (Sex == SEX_MALE ? Job_Kagerou : Job_Oboro);
+	mes .@n$;
+	mes "It is done. Go and learn what your new road teaches.";
+	close;
+}
+
+que_ng,27,62,5	script	Shadow Supplier#ko_prere	83,{
+	if (Class != Job_Kagerou && Class != Job_Oboro) {
+		mes "[Shadow Supplier]";
+		mes "My wares are for Kagerou and Oboro.";
+		close;
+	}
+	callshop "kagerou_oboro_shop",1;
+	end;
+}
+
+-	shop	kagerou_oboro_shop	-1,6512:-1,6513:-1,6514:-1,6515:-1,6493:-1,13294:-1,7524:-1

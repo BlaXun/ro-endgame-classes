@@ -1,0 +1,52 @@
+//===== transcendent-third-classes: Rune Knight ===========
+//= The Lord Knight's advancement.
+//=
+//= A Lord Knight at base level 99 and job level 70, with no skill
+//= points left, becomes a Rune Knight here, beside the stock
+//= Lord Knight changer, which is untouched. There is no other way
+//= to the class.
+//=
+//= The class is rAthena's transcendent Rune Knight. It keeps every
+//= skill it had (its tree inherits the first, second and
+//= transcendent class) and adds its own; the job level starts
+//= again at 1 and runs to 70; the base level runs to 175.
+//==============================================================
+
+valkyrie,42,39,5	script	Rune Knight#Valkyrie	56,{
+	.@n$ = "[Rune Knight]";
+	if (Class == Job_Rune_Knight_T) {
+		mes .@n$;
+		mes "You chose the dragon. The Dragon Breeder beside the Peco Peco Breeder in Prontera will lend you one. Rune-cut blades and lances are carried by the fallen knights of Glast Heim and their generals.";
+		close;
+	}
+	if (Class != Job_Lord_Knight) {
+		mes .@n$;
+		mes "A Lord Knight who has reached base level 99 and job level 70 goes on here, as a ^0000FFRune Knight^000000.";
+		close;
+	}
+	if (BaseLevel < 99 || JobLevel < 70) {
+		mes .@n$;
+		mes "Come back at base level 99 and job level 70.";
+		close;
+	}
+	if (SkillPoint) {
+		mes .@n$;
+		mes "Spend your skill points first.";
+		close;
+	}
+	mes .@n$;
+	mes "You have walked the Lord Knight's road to its end. A ^0000FFRune Knight^000000 goes on from there.";
+	next;
+	mes .@n$;
+	mes "You keep every skill you have. Your job level starts again at 1 and runs to 70, with skill points for the Rune Knight's own skills.";
+	mes "Your base level can rise to 175, and your stats past 99.";
+	next;
+	mes .@n$;
+	mes "^FF0000This step cannot be undone.^000000";
+	if (select("I take the dragon.:Not yet.") == 2)
+		close;
+	jobchange Job_Rune_Knight_T;
+	mes .@n$;
+	mes "Welcome, Rune Knight.";
+	close;
+}

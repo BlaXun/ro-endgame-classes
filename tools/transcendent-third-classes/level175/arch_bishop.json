@@ -1,0 +1,114 @@
+{
+ "_about": "Level 175: the Arch Bishop against the High Priest, whose only general attack is Holy Light (REFERENCE_ROTATIONS.md). Adoramus (7x7) and Judex (3x3) are both area skills: each is held to half of the kept Holy Light at 175 per target. The class has no single-target skill of its own. See README.md. Casters are measured on the plain dummy: the anchor (Dark 4, MDEF 50) cuts spells unevenly by element and hit count.",
+ "load": [
+  "mods/level175-core",
+  "mods/transcendent-third-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchored",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "HP_HolyLight",
+   "class": 4009,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59011,
+   "skills": "156",
+   "levels": "1",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "extra": "whisper npc:KoTest learn#156;wait 1"
+  },
+  {
+   "id": "L175_kept_HP_HolyLight",
+   "class": 4063,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59011,
+   "skills": "156",
+   "levels": "1",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "HP_HolyLight",
+   "extra": "whisper npc:KoTest learn#156;wait 1"
+  },
+  {
+   "id": "L99_AB_Adoramus_area",
+   "class": 4063,
+   "weapon": 59011,
+   "skills": "2040",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "level": 99,
+   "versus": "HP_HolyLight",
+   "stats": "int"
+  },
+  {
+   "id": "L175_AB_Adoramus_area",
+   "class": 4063,
+   "weapon": 59011,
+   "skills": "2040",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "level": 175,
+   "versus": "L175_kept_HP_HolyLight",
+   "stats": "int",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L99_AB_Judex_area",
+   "class": 4063,
+   "weapon": 59011,
+   "skills": "2038",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "level": 99,
+   "versus": "HP_HolyLight",
+   "stats": "int"
+  },
+  {
+   "id": "L175_AB_Judex_area",
+   "class": 4063,
+   "weapon": 59011,
+   "skills": "2038",
+   "levels": "10",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "level": 175,
+   "versus": "L175_kept_HP_HolyLight",
+   "stats": "int",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  }
+ ]
+}

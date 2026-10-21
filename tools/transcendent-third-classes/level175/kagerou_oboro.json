@@ -1,0 +1,445 @@
+{
+ "_about": "Level 175, first round: Kagerou and Oboro against the Ninja (its base class at 99: an advancement is that class's transcendence, target about 1.5 times its single-target damage). See README.md.",
+ "load": [
+  "mods/level175-core",
+  "mods/expanded-classes"
+ ],
+ "seconds": 30,
+ "defaults": {
+  "dummy": "anchor",
+  "repeat": 3,
+  "median": true
+ },
+ "runs": [
+  {
+   "id": "NJ_Kunai",
+   "class": 25,
+   "level": 99,
+   "weapon": 59002,
+   "skills": "524",
+   "levels": "5",
+   "step": 0.3
+  },
+  {
+   "id": "NJ_Huuma",
+   "class": 25,
+   "level": 99,
+   "weapon": 59003,
+   "skills": "525",
+   "levels": "5",
+   "method": "best",
+   "step": 0.5
+  },
+  {
+   "id": "NJ_magic_IceSpear",
+   "class": 25,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "dummy": "anchored"
+  },
+  {
+   "id": "NJ_magic_ExplodingDragon_area",
+   "class": 25,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "536",
+   "levels": "5",
+   "pre": "543:5:self",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "dummy": "anchored"
+  },
+  {
+   "id": "L99_KG_CrossSlash_SoulCutter_dual",
+   "class": 4211,
+   "weapon": 59002,
+   "skills": "3004,3005",
+   "levels": "10,5",
+   "left": 59002,
+   "level": 99,
+   "versus": "NJ_Huuma"
+  },
+  {
+   "id": "L99_KG_magic_IceSpear",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self",
+   "charge": "3016:1:10",
+   "class": 4211,
+   "level": 99,
+   "versus": "NJ_magic_IceSpear",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L130_KG_CrossSlash_SoulCutter_dual",
+   "class": 4211,
+   "weapon": 59002,
+   "skills": "3004,3005",
+   "levels": "10,5",
+   "left": 59002,
+   "level": 130,
+   "versus": "NJ_Huuma"
+  },
+  {
+   "id": "L130_KG_magic_IceSpear",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self",
+   "charge": "3016:1:10",
+   "class": 4211,
+   "level": 130,
+   "versus": "NJ_magic_IceSpear",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L150_KG_CrossSlash_SoulCutter_dual",
+   "class": 4211,
+   "weapon": 59002,
+   "skills": "3004,3005",
+   "levels": "10,5",
+   "left": 59002,
+   "level": 150,
+   "versus": "NJ_Huuma"
+  },
+  {
+   "id": "L150_KG_magic_IceSpear",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self",
+   "charge": "3016:1:10",
+   "class": 4211,
+   "level": 150,
+   "versus": "NJ_magic_IceSpear",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_KG_CrossSlash_SoulCutter_dual",
+   "class": 4211,
+   "weapon": 59002,
+   "skills": "3004,3005",
+   "levels": "10,5",
+   "left": 59002,
+   "level": 175,
+   "versus": "NJ_Huuma",
+   "aim": [
+    1.35,
+    1.65
+   ]
+  },
+  {
+   "id": "L175_KG_magic_IceSpear",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self",
+   "charge": "3016:1:10",
+   "class": 4211,
+   "level": 175,
+   "versus": "NJ_magic_IceSpear",
+   "aim": [
+    1.35,
+    1.65
+   ],
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_OB_magic_IceSpear",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self,3026:5:self",
+   "charge": "3016:1:10",
+   "class": 4212,
+   "user": "fem",
+   "level": 175,
+   "versus": "NJ_magic_IceSpear",
+   "aim": [
+    1.35,
+    1.65
+   ],
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_KG_SwirlingPetal_area",
+   "class": 4211,
+   "weapon": 59003,
+   "skills": "3009",
+   "levels": "10",
+   "method": "best",
+   "step": 0.5,
+   "level": 175,
+   "versus": "L175_KG_CrossSlash_SoulCutter_dual",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_KG_KunaiSplash_area",
+   "class": 4211,
+   "weapon": 59002,
+   "skills": "3007s",
+   "levels": "5",
+   "step": 0.3,
+   "level": 175,
+   "versus": "L175_KG_CrossSlash_SoulCutter_dual",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_KG_KunaiExplosion_area",
+   "class": 4211,
+   "weapon": 59002,
+   "skills": "3006",
+   "levels": "5",
+   "method": "best",
+   "step": 0.5,
+   "level": 175,
+   "versus": "L175_KG_CrossSlash_SoulCutter_dual",
+   "aim": [
+    0.0,
+    0.55
+   ]
+  },
+  {
+   "id": "L175_KG_magic_Kamaitachi_area",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "542",
+   "levels": "5",
+   "pre": "543:5:self",
+   "charge": "3017:1:10",
+   "class": 4211,
+   "level": 175,
+   "versus": "NJ_magic_ExplodingDragon_area",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_kept_NJ_Kunai",
+   "class": 4211,
+   "level": 175,
+   "weapon": 59002,
+   "skills": "524",
+   "levels": "5",
+   "step": 0.3,
+   "versus": "NJ_Kunai"
+  },
+  {
+   "id": "L175_kept_NJ_Huuma",
+   "class": 4211,
+   "level": 175,
+   "weapon": 59003,
+   "skills": "525",
+   "levels": "5",
+   "method": "best",
+   "step": 0.5,
+   "versus": "NJ_Huuma"
+  },
+  {
+   "id": "L175_kept_NJ_magic_IceSpear",
+   "class": 4211,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "NJ_magic_IceSpear",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_kept_NJ_magic_ExplodingDragon_area",
+   "class": 4211,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "536",
+   "levels": "5",
+   "pre": "543:5:self",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "NJ_magic_ExplodingDragon_area",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_OB_magic_IceSpear_noZangetsu",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self",
+   "charge": "3016:1:10",
+   "class": 4212,
+   "user": "fem",
+   "level": 175,
+   "versus": "NJ_magic_IceSpear",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_KG_magic_Kamaitachi_nocharm_area",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "542",
+   "levels": "5",
+   "pre": "543:5:self",
+   "class": 4211,
+   "level": 175,
+   "versus": "NJ_magic_ExplodingDragon_area",
+   "dummy": "anchored"
+  },
+  {
+   "id": "NJ_magic_Kamaitachi_area",
+   "class": 25,
+   "level": 99,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "542",
+   "levels": "5",
+   "pre": "543:5:self",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_KG_magic_ExplodingDragon_charms_area",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "536",
+   "levels": "5",
+   "pre": "543:5:self",
+   "charge": "3015:1:10",
+   "class": 4211,
+   "level": 175,
+   "versus": "NJ_magic_ExplodingDragon_area",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_KG_magic_IceSpear_16thNight",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self,3022:5:self",
+   "charge": "3016:1:10",
+   "class": 4211,
+   "level": 175,
+   "versus": "NJ_magic_IceSpear",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_KG_magic_IceSpear_nocharm_16thNight",
+   "class": 4211,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "537",
+   "levels": "10",
+   "pre": "543:5:self,3022:5:self",
+   "method": "best",
+   "step": [
+    1.0,
+    1.5
+   ],
+   "versus": "NJ_magic_IceSpear",
+   "dummy": "anchored"
+  },
+  {
+   "id": "L175_KG_ReleaseNinjaSpell_water",
+   "class": 4211,
+   "level": 175,
+   "stats": "int",
+   "weapon": 59002,
+   "skills": "3016s,3016s,3016s,3016s,3016s,3016s,3016s,3016s,3016s,3016s,3019",
+   "levels": "1,1,1,1,1,1,1,1,1,1,1",
+   "pre": "543:5:self",
+   "step": 0.5,
+   "versus": "NJ_magic_IceSpear",
+   "dummy": "anchored",
+   "seq": true
+  }
+ ]
+}
